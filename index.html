@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KashiDigitalAPIs | India's Digital Verification Infrastructure</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap Icons + Lucide -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/lucide@latest/dist/lucide.css">
+  <!-- Lottie Player -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- slick slider css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" type="text/css"  
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <!-- google fonts poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-xl navbar-light bg-white py-3 sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <span style="color: var(--primary);">Kashi</span>Digital
+      </a>
+      <button class="navbar-toggler shadow-none  border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar">
+        <i data-lucide="align-right"></i>
+      </button>
+      <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <a class="navbar-brand fw-bold" href="#">
+            <span style="color: var(--primary);">Kashi</span>Digital
+          </a>
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                data-bs-toggle="dropdown">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                <li>
+                  <h6 class="dropdown-header">Identity Verification</h6>
+                </li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-shield-check me-2"></i> Aadhaar eKYC</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-credit-card me-2"></i> PAN Verification</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <h6 class="dropdown-header">Financial APIs</h6>
+                </li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-bank me-2"></i> Account Validation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Industries</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">How It Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          </ul>
+          <div class="ms-lg-3">
+            <a href="#" class="btn me-2">Login</a>
+            <a href="#" class="btn btn-accent fw-semibold rounded-pill px-4">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="bg-light py-md-5">
+    <div class="container py-5">
+      <div class="row align-items-center row-gap-3">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold color-primary mb-3">APIs That Power India's Digital Backbone
+          </h1>
+          <p class="lead mb-4">From Aadhaar & PAN to Court Records and Bank Verification – Scale fast with secure,
+            verified APIs.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn btn-primary btn-lg px-4">Get API Access</a>
+            <a href="#" class="btn btn-outline-primary btn-lg px-4">
+              Request Demo
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- API Data Flow Lottie Animation -->
+          <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_5tkzkblw.json" background="transparent"
+            speed="1" style="width: 100%; height: auto;" loop autoplay>
+          </lottie-player>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Trusted By ===== -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">TRUSTED BY INDIA'S LEADING INNOVATORS</h2>
+      <div class="logo-slider pt-md-5">
+        <div>
+          <div class="client-logo"><img src="https://onfido.com/wp-content/uploads/2022/10/logo-bunq.svg" alt="bunq"
+              class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img
+              src="https://onfido.com/wp-content/uploads/2023/08/logo-union-bank-phillipines-146x90-1.svg" alt="union-bank"
+              class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img src="https://onfido.com/wp-content/uploads/2022/10/logo-luno.svg" alt="luno"
+              class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img src="https://onfido.com/wp-content/uploads/2023/08/logo-mettle-146x90-1.svg"
+              alt="mettle" class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img src="https://onfido.com/wp-content/uploads/2023/08/logo-getaround-146x90-1.svg"
+              alt="getaround" class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img src="	https://onfido.com/wp-content/uploads/2023/08/logo-bybit-146x90-1.svg"
+              alt="bybit" class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img src="https://onfido.com/wp-content/uploads/2022/10/logo-revolut.svg"
+              alt="revolut" class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img src="https://onfido.com/wp-content/uploads/2023/08/logo-mangopay-146x90-1.svg"
+              alt="mangopay" class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img
+              src="https://onfido.com/wp-content/uploads/2023/08/logo-drivewealth-146x90-1.svg" alt="drivewealth"
+              class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img
+              src="	https://onfido.com/wp-content/uploads/2023/08/logo-williamhill-146x90-1.svg" alt="williamhill"
+              class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img src="https://onfido.com/wp-content/uploads/2022/10/logo-remitly.svg"
+              alt="remitly" class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img src="https://onfido.com/wp-content/uploads/2023/08/logo-docusign-146x90-1.svg"
+              alt="docusign" class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo"><img src="https://onfido.com/wp-content/uploads/2023/08/logo-bybit-146x90-1.svg"
+              alt="bybit" class="img-fluid"></div>
+        </div>
+        <div>
+          <div class="client-logo">
+            <img src="https://www.idcentral.io/wp-content/uploads/2023/04/dvara.jpg" alt="dvara" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== API Products ===== -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-md-5">
+        <h2 class="fw-bold">Our API Products</h2>
+        <p class="text-muted">Modular services for every verification need</p>
+      </div>
+      <div class="row pt-5 row-gap-4 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="service-card card h-100 border-0 p-4">
+            <i data-lucide="fingerprint" width="32" height="32" class="text-primary"></i>
+            <h4 class="mb-3 mt-4">Identity & KYC</h4>
+            <p class="text-muted">Instant identity verification with 99.99% uptime SLA and photo match.</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-outline-primary btn-sm">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="service-card card h-100 border-0 p-4">
+            <i data-lucide="credit-card" width="32" height="32" class="text-primary"></i>
+            <h4 class="mb-3 mt-4">Financial APIs</h4>
+            <p class="text-muted">Real-time PAN validation with name, DOB, and status checks.</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-outline-primary btn-sm">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="service-card card h-100 border-0 p-4">
+            <i data-lucide="banknote" width="32" height="32" class="text-primary"></i>
+            <h4 class="mb-3 mt-4">Legal & Court APIs </h4>
+            <p class=" text-muted">RBI-compliant account verification with IFSC validation.</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-primary btn-sm">Learn more <i class="bi bi-arrow-right"></i></a>
+              </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="service-card card h-100 border-0 p-4">
+            <i data-lucide="banknote" width="32" height="32" class="text-primary"></i>
+            <h4 class="mb-3 mt-4">Employment Verification</h4>
+            <p class="text-muted">RBI-compliant account verification with IFSC validation.</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-outline-primary btn-sm">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Why Choose Us ===== -->
+  <section class="py-5 bg-light-custom">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="fw-bold">Why KashiDigitalAPIs?</h2>
+        <p class="text-muted">Built for developers, trusted by enterprises</p>
+      </div>
+      <div class="row g-4 text-center justify-content-center pt-5">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+            <!-- <i class="bi bi-check-square-fill fs-1 text-success"></i> -->
+            <span class="fs-1">&#9989;</span>
+            <h5 class="mt-3">Plug & Play APIs</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+            <!-- <i class="bi bi-shield-lock fs-1"></i> -->
+            <span class="fs-1">&#x1F510;</span>
+            <h5 class="mt-3">Data Security & Compliance</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+            <!-- <i class="bi bi-lightning-fill fs-1 text-warning"></i> -->
+            <span class="fs-1">&#9889;</span>
+            <h5 class="mt-3">Real-time Response</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+            <span class="fs-1">&#128736;</span>
+            <h5 class="mt-3">Developer Friendly</h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Industries We Serve ===== -->
+<section class="py-5 bg-light" style="background-color: var(--bg-light);">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Industries We Serve</h2>
+      <p class="text-muted">Tailored solutions for your sector</p>
+    </div>
+
+    <!-- Industry Tabs -->
+    <ul class="nav nav-underline justify-content-center mb-4 industry-tabs" id="industryTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="fintech-tab" data-bs-toggle="tab" data-bs-target="#fintech" type="button" role="tab">
+          <i class="bi bi-phone me-2"></i> Fintech
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="lending-tab" data-bs-toggle="tab" data-bs-target="#lending" type="button" role="tab">
+          <i class="bi bi-cash-coin me-2"></i> Lending
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="insurance-tab" data-bs-toggle="tab" data-bs-target="#insurance" type="button" role="tab">
+          <i class="bi bi-shield me-2"></i> Insurance
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="government-tab" data-bs-toggle="tab" data-bs-target="#government" type="button" role="tab">
+          <i class="bi bi-building me-2"></i> Government
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="hr-tab" data-bs-toggle="tab" data-bs-target="#hr" type="button" role="tab">
+          <i class="bi bi-people me-2"></i> HR Tech
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content bg-white rounded-3 shadow-sm p-4" id="industryTabsContent">
+      <!-- Fintech -->
+      <div class="tab-pane fade show active" id="fintech" role="tabpanel" aria-labelledby="fintech-tab">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-3">
+              <h4 class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Digital Onboarding
+              </h4>
+              <p>Reduce KYC drop-offs by 60% with seamless Aadhaar and PAN verification flows integrated directly into your mobile app.</p>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-lightning-fill text-warning me-2"></i>
+                <small class="text-muted">Example: NeoBankX reduced onboarding time from 3 days to 15 minutes</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3">
+              <h4 class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Fraud Prevention
+              </h4>
+              <p>Detect synthetic identities with real-time face match and document verification APIs.</p>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-graph-up text-primary me-2"></i>
+                <small class="text-muted">PayFi saw 45% reduction in fraud cases after implementation</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lending -->
+      <div class="tab-pane fade" id="lending" role="tabpanel" aria-labelledby="lending-tab">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-3">
+              <h4 class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Instant Disbursement
+              </h4>
+              <p>Verify bank accounts in under 500ms to enable same-day loan disbursements with RBI-compliant APIs.</p>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-speedometer2 text-warning me-2"></i>
+                <small class="text-muted">QuickCredit increased disbursal volume by 3x</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3">
+              <h4 class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Risk Assessment
+              </h4>
+              <p>Access court records and employment history to build complete borrower profiles.</p>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-shield-lock text-primary me-2"></i>
+                <small class="text-muted">LendEasy reduced NPA by 28%</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Insurance -->
+      <div class="tab-pane fade" id="insurance" role="tabpanel" aria-labelledby="insurance-tab">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-3">
+              <h4 class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> eKYC for Policies
+              </h4>
+              <p>Issue policies instantly with paperless Aadhaar-based verification that meets IRDAI requirements.</p>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-file-earmark-check text-warning me-2"></i>
+                <small class="text-muted">CoverNow processes 15,000 policies/day</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3">
+              <h4 class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Claims Processing
+              </h4>
+              <p>Reduce fraudulent claims with PAN-Aadhaar cross-verification and face authentication.</p>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-currency-rupee text-primary me-2"></i>
+                <small class="text-muted">SafeInsure saved ₹2.8Cr annually</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Government -->
+      <div class="tab-pane fade" id="government" role="tabpanel" aria-labelledby="government-tab">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-3">
+              <h4 class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Citizen Verification
+              </h4>
+              <p>Authenticate beneficiaries for welfare schemes using Aadhaar and ration card APIs.</p>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-people-fill text-warning me-2"></i>
+                <small class="text-muted">Used by 12+ state governments</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3">
+              <h4 class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Document Authentication
+              </h4>
+              <p>Verify driving licenses, property records, and other official documents in real-time.</p>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-file-text text-primary me-2"></i>
+                <small class="text-muted">Integrates with DigiLocker</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HR Tech -->
+      <div class="tab-pane fade" id="hr" role="tabpanel" aria-labelledby="hr-tab">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-3">
+              <h4 class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Employee Onboarding
+              </h4>
+              <p>Complete digital onboarding with automated document collection and verification.</p>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-stopwatch text-warning me-2"></i>
+                <small class="text-muted">HRFlow reduced onboarding time by 75%</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3">
+              <h4 class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success me-2"></i> Background Checks
+              </h4>
+              <p>Verify employment history, education, and court records at scale.</p>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-shield-check text-primary me-2"></i>
+                <small class="text-muted">Used by 500+ companies</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== How It Works ===== -->
+  <section class="py-5 bg-light" style="background-color: var(--bg-light);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">How It Works</h2>
+        <p class="text-muted">Get started in 4 simple steps</p>
+      </div>
+      <div class="row g-4">
+        <!-- Step 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <div class="">
+                <i data-lucide="user-plus" width="48" height="48"></i>
+              </div>
+              <h4 class="mt-4">Sign Up</h4>
+              <p class="text-muted">Create your developer account in 2 minutes. No credit card required.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <div class="">
+                <i data-lucide="list-ordered" width="48" height="48"></i>
+              </div>
+              <h4 class="mt-4">Choose API</h4>
+              <p class="text-muted">Select from 20+ APIs for identity, finance, and legal verification.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <div class="">
+                <i data-lucide="code" width="48" height="48"></i>
+              </div>
+              <h4 class="mt-4">Integrate</h4>
+              <p class="text-muted">Use our developer-friendly docs and SDKs for quick integration.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 bg-transparent">
+            <div class="card-body">
+              <div class="">
+                <i data-lucide="rocket" width="48" height="48"></i>
+              </div>
+              <h4 class="mt-4">Go Live</h4>
+              <p class="text-muted">Launch securely with 99.99% uptime SLA and dedicated support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Trusted by Developers</h2>
+        <p class="text-muted">What our customers say about us</p>
+      </div>
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-md-6">
+          <div class="testimonial-card p-4 h-100 bg-white rounded-3 shadow-sm">
+            <div class="d-flex mb-3">
+              <img src="https://via.placeholder.com/50x50/0052CC/FFFFFF?text=RS" alt="Rahul Sharma"
+                class="rounded-circle me-3" width="50">
+              <div>
+                <h6 class="mb-0">Rahul Sharma</h6>
+                <small class="text-muted">CTO, Fintech Startup</small>
+              </div>
+            </div>
+            <p class="mb-0">"Kashi's Aadhaar API reduced our KYC processing time from 3 days to just 15 minutes. Their
+              documentation is the best I've seen in the industry."</p>
+            <div class="mt-3 pt-3 border-top">
+              <span class="badge bg-success bg-opacity-10 text-success">90% faster verification</span>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="col-md-6">
+          <div class="testimonial-card p-4 h-100 bg-white rounded-3 shadow-sm">
+            <div class="d-flex mb-3">
+              <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Priya Patel"
+                class="rounded-circle me-3" width="50">
+              <div>
+                <h6 class="mb-0">Priya Patel</h6>
+                <small class="text-muted">Head of Compliance, Neobank</small>
+              </div>
+            </div>
+            <p class="mb-0">"We processed 1.2M verifications last quarter with zero downtime. The team's support saved
+              us 200+ engineering hours."</p>
+            <div class="mt-3 pt-3 border-top">
+              <span class="badge bg-primary bg-opacity-10 text-primary">99.99% uptime</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Sticky CTA ===== -->
+  <div class="sticky-cta py-3 border-top">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="mb-3 mb-md-0">
+          <h5 class="fw-bold mb-1">Start Verifying in Minutes</h5>
+          <p class="small text-muted mb-0">Create your free account or talk to our team for custom integration.</p>
+        </div>
+        <div>
+          <a href="#" class="btn btn-primary me-2">Get Started</a>
+          <a href="#" class="btn btn-outline-primary">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="py-5 bg-dark" style="background-color: var(--bg-dark);">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h4 class="text-white mb-3"><span style="color: var(--accent);">Kashi</span>Digital</h4>
+          <p class="text-white-50">APIs for India's digital infrastructure.</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="row row-gap-3">
+            <div class="col-lg-4 col-6">
+              <h5 class="text-white mb-3">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#" class="text-white-50 hover-white text-decoration-none">Products</a></li>
+                <li class="mb-2"><a href="#" class="text-white-50 hover-white text-decoration-none">Industries</a></li>
+                <li class="mb-2"><a href="#" class="text-white-50 hover-white text-decoration-none">About</a></li>
+                <li class="mb-2"><a href="#" class="text-white-50 hover-white text-decoration-none">Docs</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-6">
+              <h5 class="text-white mb-3">Contact Us</h5>
+          <ul class="list-unstyled text-white-50 ">
+          <li class="mb-2 hover-white"><i class="bi bi-envelope me-2"></i> lorem@kashidigital.com</li>
+          <li class="mb-2 hover-white"><i class="bi bi-telephone me-2"></i> +91 1234567891</li>
+          <li class="hover-white"><i class="bi bi-geo-alt me-2"></i> lorem, India</li>
+        </ul>
+        <div class="mt-4">
+          <a href="#" class="text-white-50 hover-white me-3"><i class="bi bi-linkedin fs-5"></i></a>
+          <a href="#" class="text-white-50 hover-white me-3"><i class="bi bi-twitter fs-5"></i></a>
+        </div>
+            </div>
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white mb-3">Sign Up</h5>
+        <form class="mb-4">
+          <div class="input-group">
+            <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Your email">
+            <button class="btn btn-accent" type="submit">Join</button>
+          </div>
+          <small class="text-white-50">Stay updated – Join our newsletter</small>
+        </form>
+        <div class="mt-4">
+          <h5 class="text-white mb-3">Certifications</h5>
+          <div class="d-flex gap-3">
+            <img src="assets/images/iso.png" alt="ISO 27001" class="img-fluid" width="50px">
+            <img src="assets/images/rbi.png" alt="RBI Compliant"class="img-fluid" width="50px">
+            <img src="assets/images/startup-india-logo.png" alt="StartUp India"class="img-fluid" width="50px">
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="small text-white-50">© 2024 KashiDigitalAPIs. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="small text-white-50 me-3">Privacy Policy</a>
+          <a href="#" class="small text-white-50">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- slick slider js -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+    $(document).ready(function () {
+      $('.logo-slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 1000,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              speed: 500,
+               fade: true,
+              cssEase: 'linear'
+            }
+          }
+        ]
+      });
+    });
+  //   if (window.innerWidth < 992) {
+  //   document.querySelector('.nav-tabs .nav-link').click();
+  // }
+  </script>
+</body>
+
+</html>
