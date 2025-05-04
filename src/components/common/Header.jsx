@@ -42,15 +42,14 @@ const Header = () => {
         <div className="offcanvas-body">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item dropdown" >
-              <NavLink
+              <span
                 className="nav-link dropdown-toggle"
-                to="/products"
                 id="productsDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
               >
                 Products
-              </NavLink>
+              </span>
               <ul className="dropdown-menu" aria-labelledby="productsDropdown">
                 <li>
                   <h6 className="dropdown-header">Identity Verification</h6>
