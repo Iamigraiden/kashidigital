@@ -160,17 +160,17 @@ const Footer = () => {
               <div className="mt-4">
                 <h5 className="text-white mb-3">Certifications</h5>
                 <div className="d-flex flex-column gap-2">
-                  <NavLink to="https://www.digitalindia.gov.in/" target='_blank'>
+                  <NavLink to="https://www.digitalindia.gov.in/" target='_blank' className="col-md-12 col-10 mx-auto">
                   <img
                     src="/assets/images/DigitalIndiaLogo-CiZR7aUc.jpg"
                     alt="digitalindia"
-                    className="img-fluid col-md-12 col-10 mx-auto"
+                    className="img-fluid"
                   /></NavLink>
-                   <NavLink to="https://gem.gov.in/" target='_blank'>
+                   <NavLink to="https://gem.gov.in/" className="col-md-12 col-10 mx-auto" target='_blank'>
                   <img
                     src="/assets/images/GemGovLogo-BXjU9Rmd.png"
                     alt="gem.gov"
-                    className="img-fluid col-md-12 col-10 mx-auto"
+                    className="img-fluid"
                   /></NavLink>
                   <img
                     src="/assets/images/StartupIndia-Abi8Sn70.jpg"
@@ -182,11 +182,11 @@ const Footer = () => {
                     alt="ISO 27001"
                     className="img-fluid col-md-12 col-10 mx-auto"
                   />
-                  <NavLink to="https://kashidigital.in/pay-now-online-kashi-digital-agency-pvt-ltd/" target='_blank'>
+                  <NavLink to="https://kashidigital.in/pay-now-online-kashi-digital-agency-pvt-ltd/" target='_blank' className="col-md-12 col-10 mx-auto">
                   <img
                     src="/assets/images/payments-DxVsiWUy.png"
                     alt="ISO 27001"
-                    className="img-fluid col-md-12 col-10 mx-auto"
+                    className="img-fluid"
                   /></NavLink>
                 </div>
               </div>
