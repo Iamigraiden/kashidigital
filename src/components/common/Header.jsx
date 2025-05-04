@@ -1,4 +1,4 @@
-import { AlignRight } from 'lucide-react'
+import { AlignRight, X } from 'lucide-react'
 import './header.css'
 import { NavLink } from 'react-router-dom'
 
@@ -34,14 +34,14 @@ const Header = () => {
         />
           <button
             type="button"
-            className="btn-close shadow-none"
+            className="btn ms-auto border-0 shadow-none text-white"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
-          />
+          ><X /></button>
         </div>
         <div className="offcanvas-body">
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown" >
               <NavLink
                 className="nav-link dropdown-toggle"
                 to="/products"
@@ -55,50 +55,50 @@ const Header = () => {
                 <li>
                   <h6 className="dropdown-header">Identity Verification</h6>
                 </li>
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   <NavLink className="dropdown-item" to="/u">
                     <i className="bi bi-shield-check me-2" /> Aadhaar eKYC
                   </NavLink>
-                </li>
-                <li>
+                </li >
+                <li data-bs-dismiss="offcanvas">
                   <NavLink className="dropdown-item" to="/p">
                     <i className="bi bi-credit-card me-2" /> PAN Verification
                   </NavLink>
                 </li>
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   <hr className="dropdown-divider" />
                 </li>
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   <h6 className="dropdown-header">Financial APIs</h6>
                 </li>
-                <li>
+                <li data-bs-dismiss="offcanvas">
                   <NavLink className="dropdown-item" to="/i">
                     <i className="bi bi-bank me-2" /> Account Validation
                   </NavLink>
                 </li>
               </ul>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" data-bs-dismiss="offcanvas">
               <NavLink className="nav-link" to="/industries">
                 Industries
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" data-bs-dismiss="offcanvas">
               <NavLink className="nav-link" to="/work">
                 How It Works
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" data-bs-dismiss="offcanvas">
               <NavLink className="nav-link" to="/docs">
                 Docs
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" data-bs-dismiss="offcanvas">
               <NavLink className="nav-link" to="/pricing">
                 Pricing
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" data-bs-dismiss="offcanvas"  >
               <NavLink className="nav-link" to="/about">
                 About Us
               </NavLink>

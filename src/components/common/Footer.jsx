@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
   {/* ===== Footer ===== */}
   <footer
-    className="pt-5 bg-dark"
+    className="pt-5 pb-3 bg-dark"
     style={{ backgroundColor: "var(--bg-dark)" }}
   >
     <div className="container">

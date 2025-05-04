@@ -28,7 +28,7 @@ const AboutUs = () => {
   return (
     <div className="about-page">
       {/* Hero Section */}
-      <section className="py-5 bg-light" >
+      <section className="py-md-5 bg-light" >
         <div className="container py-5">
           <div className="row align-items-center row-gap-3">
             <div className="col-lg-6">
