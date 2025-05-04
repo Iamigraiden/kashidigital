@@ -1,0 +1,25 @@
+.logo-slider{
+    background: linear-gradient(to right, #22004c, #ac0084);
+}
+/* client logo  */
+.client-logo{
+    width: 200px !important;
+    margin: auto;
+}
+.client-logo img{
+    padding: 10px 10px;
+    height: 100%;
+    border-radius: 0px; 
+    width: 100%;
+    object-fit: cover;
+}
+.partner-img{
+    width: 150px;
+}
+.partner-img img{
+    padding: 0px 10px;
+    height: 100%;
+    border-radius: 0px; 
+    width: 100%;
+    object-fit: cover;
+}

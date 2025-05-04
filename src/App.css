@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  :root {
+    --primary: #0052CC;       /* Trust Blue */
+    --accent: #FFC107;        /* Energy Yellow */
+    --text-dark: #333333;     /* Neutral Text */
+    --bg-light: #F7F9FC;     /* Light Background */
+    --bg-dark: #0B1A30;      /* Dark Background */
+    --success: #34C759;       /* Success Green */
+    --purple:#9334eb;
+    --liblue:#034d74;
+    --orange:#fb923c;
+  }
+  .color-primary{
+      color: var(--primary) !important;
+  }
+  .color-accent{
+      color: var(--accent) !important;
+  }
+  .color-purple{
+    color: var(--purple) !important;
+  }
+  .color-liblue{
+    color: var(--liblue) !important;
+  }
+  .color-orange{
+    color: var(--orange) !important;
+  }
+  body {
+      font-family: "Poppins", sans-serif !important;
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  .btn-accent,.btn-accent:target,.btn-accent:hover{
+      background-color: var(--accent) !important;
+  }

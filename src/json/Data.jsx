@@ -1,0 +1,24 @@
+export const clientsLogo = [
+    {
+      image:"/assets/images/clients/client1.png"
+    },
+    {
+        image:"/assets/images/clients/client2.png"
+      },
+      {
+        image:"/assets/images/clients/client3.png"
+      },
+      {
+        image:"/assets/images/clients/client4.png"
+      },
+      {
+        image:"/assets/images/clients/client5.png"
+      },
+      {
+        image:"/assets/images/clients/client6.png"
+      },
+      {
+        image:"/assets/images/clients/client7.png"
+      },
+
+  ];

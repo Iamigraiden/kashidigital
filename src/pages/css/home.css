@@ -1,0 +1,47 @@
+
+/* Tech Illustrations */
+.tech-illustration {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 15px rgba(0, 82, 204, 0.1));
+}
+
+/* Cards */
+.service-card {
+  border: 1px solid rgba(0, 82, 204, 0.08);
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 82, 204, 0.1);
+  border-color: rgba(0, 82, 204, 0.2);
+}
+
+.industry-tabs .nav-item{
+    margin-inline: 10px;
+}
+.industry-tabs .nav-item .nav-link{
+    color: #333333;
+    font-weight: 700;
+}
+.industry-tabs .nav-item .nav-link.active{
+    color:var(--success);
+}
+/* Testimonials */  
+.testimonial-card {
+  border-left: 3px solid var(--accent);
+  transition: all 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Sticky CTA */
+.sticky-cta {
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.1);
+  background: white;
+}

@@ -1,0 +1,25 @@
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid rgba(0, 82, 204, 0.08);
+  }
+  .mainNav{
+    background-color: var(--purple) !important;
+  }
+  .offcanvas-header{
+    background-color: var(--purple) !important;
+  }
+  .navbar-nav .nav-link, .navbar-nav .nav-link:hover {
+    color: white;
+}
+  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white !important;
+    border-bottom:solid white ;
+}
+  @media (min-width: 992px) {
+  .navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  }
+  }
+  .navbar-nav .nav-item {
+  margin: 0 10px;
+  }
