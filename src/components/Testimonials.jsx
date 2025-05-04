@@ -16,7 +16,7 @@ const Testimonials = () => {
       id: 2,
       name: "John D.",
       role: "Product Manager, Lending Platform",
-      content: "The cost-control model is perfect for a growing business. We only pay for what we need.",
+      content: "The cost-control model is perfect for a growing business. We only pay for what we need. Highly recommended!",
       rating: 5
     },
     {
