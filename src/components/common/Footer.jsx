@@ -137,24 +137,31 @@ const Footer = () => {
               </form>
               <div className="mt-4">
                 <h5 className="text-white mb-3">Certifications</h5>
-                <div className="d-flex gap-3">
+                <div className="d-flex flex-column gap-2">
                   <img
-                    src="assets/images/iso.png"
+                    src="/assets/images/DigitalIndiaLogo-CiZR7aUc.jpg"
+                    alt="ISO 27001"
+                    className="img-fluid col-5"
+                  />
+                  <img
+                    src="/assets/images/GemGovLogo-BXjU9Rmd.png"
                     alt="ISO 27001"
                     className="img-fluid"
-                    width="50px"
                   />
                   <img
-                    src="assets/images/rbi.png"
-                    alt="RBI Compliant"
+                    src="/assets/images/StartupIndia-Abi8Sn70.jpg"
+                    alt="ISO 27001"
                     className="img-fluid"
-                    width="50px"
                   />
                   <img
-                    src="assets/images/startup-india-logo.png"
-                    alt="StartUp India"
+                    src="/assets/images/f1.png"
+                    alt="ISO 27001"
                     className="img-fluid"
-                    width="50px"
+                  />
+                  <img
+                    src="/assets/images/payments-DxVsiWUy.png"
+                    alt="ISO 27001"
+                    className="img-fluid"
                   />
                 </div>
               </div>
