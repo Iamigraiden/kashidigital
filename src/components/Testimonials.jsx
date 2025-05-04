@@ -16,14 +16,14 @@ const Testimonials = () => {
       id: 2,
       name: "John D.",
       role: "Product Manager, Lending Platform",
-      content: "The cost-control model is perfect for a growing business. We only pay for what we need. Highly recommended!",
+      content: "The cost-control model is perfect for a growing business. We only pay for what we need.",
       rating: 5
     },
     {
       id: 3,
       name: "Priya M.",
       role: "Head of Compliance, Neobank",
-      content: "Implementation was seamless with their excellent documentation and support team.",
+      content: "Implementation was seamless with their excellent documentation and support team. Highly recommended!",
       rating: 5
     }
   ];
