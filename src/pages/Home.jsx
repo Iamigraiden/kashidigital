@@ -374,28 +374,7 @@ function Home() {
       <Kashiwork/>
       {/* ===== Testimonials ===== */}
       <Testimonials/>
-      {/* ===== Sticky CTA ===== */}
-      <div className="sticky-cta py-3 border-top">
-        <div className="container">
-          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <div className="mb-3 mb-md-0">
-              <h5 className="fw-bold mb-1">Start Verifying in Minutes</h5>
-              <p className="small text-muted mb-0">
-                Create your free account or talk to our team for custom
-                integration.
-              </p>
-            </div>
-            <div>
-              <a href="#" className="btn btn-primary me-2">
-                Get Started
-              </a>
-              <a href="#" className="btn btn-outline-primary">
-                Contact Sales
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    
     </>
   );
 }

@@ -1,4 +1,11 @@
-
+/* Sticky CTA */
+.sticky-cta {
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
 /* footer */
 .hover-white:hover {
     color: white !important;
