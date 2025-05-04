@@ -52,10 +52,10 @@ const Footer = () => {
               <p className="text-white-50 ps-4">
                 12725/204 80 Ave, Surrey, BC<br />
                 V3W 1A6, Canada<br />
-                <a href="mailto:contact@kashidigitalapis.com" className="text-white-50">
+                <NavLink to="mailto:contact@kashidigitalapis.com" className="text-white-50 hover-white">
                   <Mail className="me-1" size={16} />
                   contact@kashidigitalapis.com
-                </a>
+                </NavLink>
               </p>
             </div>
 
@@ -67,10 +67,10 @@ const Footer = () => {
               <p className="text-white-50 ps-4">
                 Plot No. #6, Shivpur,<br />
                 Varanasi, Uttar Pradesh, India - 221003<br />
-                <a href="mailto:contact@kashidigitalapis.com" className="text-white-50">
+                <NavLink to="mailto:contact@kashidigitalapis.com" className="text-white-50 hover-white">
                   <Mail className="me-1" size={16} />
                   contact@kashidigitalapis.com
-                </a>
+                </NavLink>
               </p>
             </div>
 
@@ -116,6 +116,30 @@ const Footer = () => {
                     Docs
                   </NavLink>
                 </li>
+                <li className="mb-2">
+                  <NavLink
+                    to="/refund"
+                    className="text-white-50 hover-white text-decoration-none"
+                  >
+                   Refund Policy
+                  </NavLink>
+                </li>
+                <li className="mb-2">
+                  <NavLink
+                    to="/privacy"
+                    className="text-white-50 hover-white text-decoration-none"
+                  >
+                   Privacy Policy
+                  </NavLink>
+                </li>
+                <li className="mb-2">
+                  <NavLink
+                    to="/terms"
+                    className="text-white-50 hover-white text-decoration-none"
+                  >
+                   Terms of Service
+                  </NavLink>
+                </li>        
               </ul>
             </div>
             <div className="col-lg-4 col-md-6">
@@ -135,7 +159,7 @@ const Footer = () => {
                 </NavLink></li>
                 <li className="mb-2 hover-white">
                 <NavLink to="https://x.com/kashidigital" target='_blank' className="text-white-50 hover-white text-decoration-none">
-                  <i className="bi bi-twitter fs-5 me-1" /> Twitter
+                  <i className="bi bi-twitter-x fs-5 me-1" /> Twitter
                 </NavLink>
                 </li>
               </ul>
@@ -205,10 +229,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="col-md-6 text-md-end">
-          <NavLink to="/privacy" className="small text-white-50 me-3">
+          <NavLink to="/privacy" className="small text-white-50 hover-white me-3">
             Privacy Policy
           </NavLink>
-          <NavLink to="/terms" className="small text-white-50">
+          <NavLink to="/terms" className="small text-white-50 hover-white">
             Terms of Service
           </NavLink>
         </div>

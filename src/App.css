@@ -14,6 +14,9 @@
     --liblue:#034d74;
     --orange:#fb923c;
   }
+  a{
+    text-decoration: none !important;
+  }
   .color-primary{
       color: var(--primary) !important;
   }
@@ -37,3 +40,12 @@
   .btn-accent,.btn-accent:target,.btn-accent:hover{
       background-color: var(--accent) !important;
   }
+  /* Disable smooth scrolling for route changes */
+html {
+  scroll-behavior: auto !important;
+}
+
+/* Re-enable smooth scrolling for internal links */
+a[href^="#"] {
+  scroll-behavior: smooth;
+}

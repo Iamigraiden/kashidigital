@@ -1,0 +1,12 @@
+.error-main{
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    background-color: rgb(40, 39, 39);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  } 

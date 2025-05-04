@@ -5,6 +5,7 @@ import Logo from "../components/Logo";
 import { Code, CreditCard, Fingerprint, ListOrdered, Rocket, UserPlus } from "lucide-react";
 import Kashiwork from "../components/Kashiwork";
 import Testimonials from "../components/Testimonials";
+import Feature from "../components/Feature";
 
 function Home() {
   return (
@@ -306,8 +307,7 @@ function Home() {
       >
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="fw-bold">How It Works</h2>
-            <p className="text-muted">Get started in 4 simple steps</p>
+            <h2 className="fw-bold color-liblue">Get started in <span className="color-orange">4 simple steps</span></h2>
           </div>
           <div className="row g-4">
             {/* Step 1 */}
@@ -372,6 +372,7 @@ function Home() {
         </div>
       </section>
       <Kashiwork/>
+      <Feature/>
       {/* ===== Testimonials ===== */}
       <Testimonials/>
     

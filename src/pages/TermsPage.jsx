@@ -63,7 +63,7 @@ const TermsAndConditions = () => {
   return (
     <div className="terms-page">
       {/* Hero Section */}
-      <section className="py-5 bg-light" style={{ backgroundColor: '#F7F9FC' }}>
+      <section className="py-md-5 bg-light">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-8 mx-auto text-center">

@@ -26,24 +26,25 @@ const Header = () => {
       </button>
       <div className="offcanvas offcanvas-end" id="offcanvasNavbar">
         <div className="offcanvas-header">
+          <NavLink to="/">
         <img
           src="/assets/images/kashi-logo.png"
           alt="Kashi Digital"
           className="img-fluid"
           width="160px"
-        />
+        /></NavLink>
           <button
             type="button"
-            className="btn ms-auto border-0 shadow-none text-white"
+            className="btn btn-close btn-close-white shadow-none"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
-          ><X /></button>
+          ></button>
         </div>
         <div className="offcanvas-body">
-          <ul className="navbar-nav mx-auto">
+          <ul className="navbar-nav mx-auto main-menu">
             <li className="nav-item dropdown" >
               <span
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle "
                 id="productsDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
