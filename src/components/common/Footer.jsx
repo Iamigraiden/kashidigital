@@ -141,27 +141,27 @@ const Footer = () => {
                   <img
                     src="/assets/images/DigitalIndiaLogo-CiZR7aUc.jpg"
                     alt="ISO 27001"
-                    className="img-fluid col-5"
+                    className="img-fluid col-md-12 col-10 mx-auto"
                   />
                   <img
                     src="/assets/images/GemGovLogo-BXjU9Rmd.png"
                     alt="ISO 27001"
-                    className="img-fluid"
+                    className="img-fluid col-md-12 col-10 mx-auto"
                   />
                   <img
                     src="/assets/images/StartupIndia-Abi8Sn70.jpg"
                     alt="ISO 27001"
-                    className="img-fluid"
+                    className="img-fluid col-md-12 col-10 mx-auto"
                   />
                   <img
                     src="/assets/images/f1.png"
                     alt="ISO 27001"
-                    className="img-fluid"
+                    className="img-fluid col-md-12 col-10 mx-auto"
                   />
                   <img
                     src="/assets/images/payments-DxVsiWUy.png"
                     alt="ISO 27001"
-                    className="img-fluid"
+                    className="img-fluid col-md-12 col-10 mx-auto"
                   />
                 </div>
               </div>
