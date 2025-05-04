@@ -46,14 +46,14 @@ function Home() {
       {/* ===== API Products ===== */}
       <section className="py-5">
         <div className="container">
-          <div className="text-center mb-md-5">
+          <div className="text-center">
             <h2 className="fw-bold color-liblue">Our <span className="color-orange">API Products</span>
             </h2>
             <p className="text-muted">
             Modular services for every verification need
             </p>
           </div>
-          <div className="row pt-5 row-gap-4 justify-content-center">
+          <div className="row pt-md-5 row-gap-4 justify-content-center">
             {/* Card 1 */}
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className="service-card card h-100 border-0 p-4">

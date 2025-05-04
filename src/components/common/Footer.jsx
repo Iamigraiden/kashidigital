@@ -85,36 +85,36 @@ const Footer = () => {
               <h5 className="text-white mb-3">Quick Links</h5>
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <a
-                    href="#"
+                  <NavLink
+                    to="#"
                     className="text-white-50 hover-white text-decoration-none"
                   >
                     Products
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="mb-2">
-                  <a
-                    href="#"
+                  <NavLink
+                    to="/"
                     className="text-white-50 hover-white text-decoration-none"
                   >
                     Industries
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="mb-2">
-                  <a
-                    href="#"
+                  <NavLink
+                    to="/about"
                     className="text-white-50 hover-white text-decoration-none"
                   >
-                    About
-                  </a>
+                    About Us
+                  </NavLink>
                 </li>
                 <li className="mb-2">
-                  <a
-                    href="#"
+                  <NavLink
+                    to="/"
                     className="text-white-50 hover-white text-decoration-none"
                   >
                     Docs
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -122,19 +122,19 @@ const Footer = () => {
               <h5 className="text-white mb-3">Social Media</h5>
               <ul className="list-unstyled text-white-50">
                 <li className="mb-2 hover-white ">
-                <NavLink to="#" className="text-white-50 hover-white text-decoration-none">
+                <NavLink to="https://www.instagram.com/kashidigital" target='_blank' className="text-white-50 hover-white text-decoration-none">
                   <i className="bi bi-instagram fs-5 me-1" /> Instagram
                 </NavLink></li>
                 <li className="mb-2 hover-white">
-                <NavLink to="#" className="text-white-50 hover-white text-decoration-none">
+                <NavLink to="https://www.facebook.com/kashidigitalofficial" target='_blank' className="text-white-50 hover-white text-decoration-none">
                   <i className="bi bi-facebook fs-5 me-1" /> Facebook
                 </NavLink></li>
                 <li className="mb-2 hover-white">
-                <NavLink to="#" className="text-white-50 hover-white text-decoration-none">
+                <NavLink to="https://www.linkedin.com/company/kashi-digital-agency" target='_blank' className="text-white-50 hover-white text-decoration-none">
                   <i className="bi bi-linkedin fs-5 me-1" /> Linkedin
                 </NavLink></li>
                 <li className="mb-2 hover-white">
-                <NavLink to="#" className="text-white-50 hover-white text-decoration-none">
+                <NavLink to="https://x.com/kashidigital" target='_blank' className="text-white-50 hover-white text-decoration-none">
                   <i className="bi bi-twitter fs-5 me-1" /> Twitter
                 </NavLink>
                 </li>
@@ -160,19 +160,21 @@ const Footer = () => {
               <div className="mt-4">
                 <h5 className="text-white mb-3">Certifications</h5>
                 <div className="d-flex flex-column gap-2">
+                  <NavLink to="https://www.digitalindia.gov.in/" target='_blank'>
                   <img
                     src="/assets/images/DigitalIndiaLogo-CiZR7aUc.jpg"
-                    alt="ISO 27001"
+                    alt="digitalindia"
                     className="img-fluid col-md-12 col-10 mx-auto"
-                  />
+                  /></NavLink>
+                   <NavLink to="https://gem.gov.in/" target='_blank'>
                   <img
                     src="/assets/images/GemGovLogo-BXjU9Rmd.png"
-                    alt="ISO 27001"
+                    alt="gem.gov"
                     className="img-fluid col-md-12 col-10 mx-auto"
-                  />
+                  /></NavLink>
                   <img
                     src="/assets/images/StartupIndia-Abi8Sn70.jpg"
-                    alt="ISO 27001"
+                    alt="StartupIndia"
                     className="img-fluid col-md-12 col-10 mx-auto"
                   />
                   <img
@@ -180,11 +182,12 @@ const Footer = () => {
                     alt="ISO 27001"
                     className="img-fluid col-md-12 col-10 mx-auto"
                   />
+                  <NavLink to="https://kashidigital.in/pay-now-online-kashi-digital-agency-pvt-ltd/" target='_blank'>
                   <img
                     src="/assets/images/payments-DxVsiWUy.png"
                     alt="ISO 27001"
                     className="img-fluid col-md-12 col-10 mx-auto"
-                  />
+                  /></NavLink>
                 </div>
               </div>
             </div>
@@ -202,12 +205,12 @@ const Footer = () => {
           </p>
         </div>
         <div className="col-md-6 text-md-end">
-          <a href="#" className="small text-white-50 me-3">
+          <NavLink to="/privacy" className="small text-white-50 me-3">
             Privacy Policy
-          </a>
-          <a href="#" className="small text-white-50">
+          </NavLink>
+          <NavLink to="/terms" className="small text-white-50">
             Terms of Service
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>
