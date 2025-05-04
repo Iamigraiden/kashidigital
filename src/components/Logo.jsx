@@ -13,6 +13,7 @@ const Logo = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        
         // cssEase: "linear",
         arrows:false,
         responsive: [
