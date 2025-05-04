@@ -8,6 +8,10 @@
   .offcanvas-header{
     background-color: var(--purple) !important;
   }
+
+  @media (min-width: 992px) {
+  .navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: block;}
   .navbar-nav .nav-link, .navbar-nav .nav-link:hover {
     color: white;
 }
@@ -15,10 +19,6 @@
     color: white !important;
     border-bottom:solid white ;
 }
-  @media (min-width: 992px) {
-  .navbar .nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-  }
   }
   .navbar-nav .nav-item {
   margin: 0 10px;

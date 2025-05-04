@@ -4,6 +4,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import Logo from "../components/Logo";
 import { Code, CreditCard, Fingerprint, ListOrdered, Rocket, UserPlus } from "lucide-react";
 import Kashiwork from "../components/Kashiwork";
+import Testimonials from "../components/Testimonials";
 
 function Home() {
   return (
@@ -372,70 +373,7 @@ function Home() {
       </section>
       <Kashiwork/>
       {/* ===== Testimonials ===== */}
-      <section className="py-5">
-        <div className="container">
-          <div className="text-center mb-5">
-            <h2 className="fw-bold color-liblue">What our <span className="color-orange">client Say's</span>  about us!</h2>
-          </div>
-          <div className="row g-4">
-            {/* Testimonial 1 */}
-            <div className="col-md-6">
-              <div className="testimonial-card p-4 h-100 bg-white rounded-3 shadow-sm">
-                <div className="d-flex mb-3">
-                  <img
-                    src=""
-                    alt="Rahul Sharma"
-                    className="rounded-circle me-3"
-                    width={50}
-                  />
-                  <div>
-                    <h6 className="mb-0">Rahul Sharma</h6>
-                    <small className="text-muted">CTO, Fintech Startup</small>
-                  </div>
-                </div>
-                <p className="mb-0">
-                  "Kashi's Aadhaar API reduced our KYC processing time from 3
-                  days to just 15 minutes. Their documentation is the best I've
-                  seen in the industry."
-                </p>
-                <div className="mt-3 pt-3 border-top">
-                  <span className="badge bg-success bg-opacity-10 text-success">
-                    90% faster verification
-                  </span>
-                </div>
-              </div>
-            </div>
-            {/* Testimonial 2 */}
-            <div className="col-md-6">
-              <div className="testimonial-card p-4 h-100 bg-white rounded-3 shadow-sm">
-                <div className="d-flex mb-3">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
-                    alt="Priya Patel"
-                    className="rounded-circle me-3"
-                    width={50}
-                  />
-                  <div>
-                    <h6 className="mb-0">Priya Patel</h6>
-                    <small className="text-muted">
-                      Head of Compliance, Neobank
-                    </small>
-                  </div>
-                </div>
-                <p className="mb-0">
-                  "We processed 1.2M verifications last quarter with zero
-                  downtime. The team's support saved us 200+ engineering hours."
-                </p>
-                <div className="mt-3 pt-3 border-top">
-                  <span className="badge bg-primary bg-opacity-10 text-primary">
-                    99.99% uptime
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Testimonials/>
       {/* ===== Sticky CTA ===== */}
       <div className="sticky-cta py-3 border-top">
         <div className="container">

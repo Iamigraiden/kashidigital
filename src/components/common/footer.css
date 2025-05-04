@@ -1,0 +1,27 @@
+
+/* footer */
+.hover-white:hover {
+    color: white !important;
+    text-decoration: none;
+  }
+
+/* form  */
+.form-control.bg-dark:focus {
+    background-color: var(--bg-dark);
+    color: white;
+    border-color: var(--accent);
+    box-shadow: none;
+  }
+  @media screen and (max-width:576px) {
+    .service-card {
+      border: 1px solid rgba(0, 82, 204, 0.08);
+      transition: all 0.3s ease;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 82, 204, 0.1);
+      border-color: rgba(0, 82, 204, 0.2);
+    }
+    .service-card:hover {
+      transform: none;
+     
+    }
+  }

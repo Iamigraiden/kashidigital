@@ -1,22 +1,61 @@
 import React from 'react'
+import './footer.css'
+import { NavLink } from 'react-router-dom'
+import { MapPin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
     <>
   {/* ===== Footer ===== */}
   <footer
-    className="py-5 bg-dark"
+    className="pt-5 bg-dark"
     style={{ backgroundColor: "var(--bg-dark)" }}
   >
     <div className="container">
       <div className="row g-4">
         <div className="col-lg-4">
-          <h4 className="text-white mb-3">
-            <span style={{ color: "var(--accent)" }}>Kashi</span>Digital
-          </h4>
-          <p className="text-white-50">
-            APIs for India's digital infrastructure.
-          </p>
+        <NavLink className="navbar-brand fw-bold" to="/">
+        <img
+          src="/assets/images/kashi-logo.png"
+          alt="Kashi Digital"
+          className="img-fluid"
+          width="250px"
+        />
+      </NavLink>
+      <div className="my-4">
+              <h6 className="d-flex align-items-center text-white mb-3">
+                <MapPin className="me-2" size={18} />
+                <span>Research And Development</span>
+              </h6>
+              <p className="text-white-50 ps-4">
+                12725/204 80 Ave, Surrey, BC<br />
+                V3W 1A6, Canada<br />
+                <a href="mailto:contact@kashidigitalapis.com" className="text-white-50">
+                  <Mail className="me-1" size={16} />
+                  contact@kashidigitalapis.com
+                </a>
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <h6 className="d-flex align-items-center text-white mb-3">
+                <MapPin className="me-2" size={18} />
+                <span>Sales And Development</span>
+              </h6>
+              <p className="text-white-50 ps-4">
+                Plot No. #6, Shivpur,<br />
+                Varanasi, Uttar Pradesh, India - 221003<br />
+                <a href="mailto:contact@kashidigitalapis.com" className="text-white-50">
+                  <Mail className="me-1" size={16} />
+                  contact@kashidigitalapis.com
+                </a>
+              </p>
+            </div>
+
+            <div className="text-white-50 small">
+              <p className="mb-1">CIN: U62099UP2024PTC19785S</p>
+              <p>GSTIN: 09ALVPY1138Q12W</p>
+            </div>
         </div>
         <div className="col-lg-8">
           <div className="row row-gap-3">
@@ -58,26 +97,26 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-lg-4 col-md-6">
-              <h5 className="text-white mb-3">Contact Us</h5>
+              <h5 className="text-white mb-3">Social Media</h5>
               <ul className="list-unstyled text-white-50">
+                <li className="mb-2 hover-white ">
+                <NavLink to="#" className="text-white-50 hover-white text-decoration-none">
+                  <i className="bi bi-instagram fs-5 me-1" /> Instagram
+                </NavLink></li>
                 <li className="mb-2 hover-white">
-                  <i className="bi bi-envelope me-2" /> lorem@kashidigital.com
-                </li>
+                <NavLink to="#" className="text-white-50 hover-white text-decoration-none">
+                  <i className="bi bi-facebook fs-5 me-1" /> Facebook
+                </NavLink></li>
                 <li className="mb-2 hover-white">
-                  <i className="bi bi-telephone me-2" /> +91 1234567891
-                </li>
-                <li className="hover-white">
-                  <i className="bi bi-geo-alt me-2" /> lorem, India
+                <NavLink to="#" className="text-white-50 hover-white text-decoration-none">
+                  <i className="bi bi-linkedin fs-5 me-1" /> Linkedin
+                </NavLink></li>
+                <li className="mb-2 hover-white">
+                <NavLink to="#" className="text-white-50 hover-white text-decoration-none">
+                  <i className="bi bi-twitter fs-5 me-1" /> Twitter
+                </NavLink>
                 </li>
               </ul>
-              <div className="mt-4">
-                <a href="#" className="text-white-50 hover-white me-3">
-                  <i className="bi bi-linkedin fs-5" />
-                </a>
-                <a href="#" className="text-white-50 hover-white me-3">
-                  <i className="bi bi-twitter fs-5" />
-                </a>
-              </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <h5 className="text-white mb-3">Sign Up</h5>
@@ -130,7 +169,7 @@ const Footer = () => {
       <div className="row">
         <div className="col-md-6">
           <p className="small text-white-50">
-            © 2024 KashiDigitalAPIs. All rights reserved.
+            © 2025 Kashi Digital Agency Pvt. Ltd. All Rights Are Reserved.
           </p>
         </div>
         <div className="col-md-6 text-md-end">
