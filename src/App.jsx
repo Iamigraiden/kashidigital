@@ -12,6 +12,7 @@ import Privacy from './pages/Privacy.jsx';
 import TermsAndConditions from './pages/TermsPage.jsx';
 import RefundPolicy from './pages/RefundPolicy.jsx';
 import Error from './pages/Error.jsx';
+import FaqPage from './pages/FaqPage.jsx';
 function App() {
 
   return (
@@ -28,6 +29,8 @@ function App() {
           <Route path='/privacy' element={<Privacy />} />
           <Route path='/terms' element={<TermsAndConditions />} />
           <Route path='/refund' element={<RefundPolicy />} />
+          <Route path='/faq' element={<FaqPage />} />
+
         </Route>
       </Routes>
     </>

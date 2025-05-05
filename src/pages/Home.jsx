@@ -165,14 +165,13 @@ function Home() {
       {/* ===== Industries We Serve ===== */}
       <section
         className="py-5 bg-light"
-        style={{ backgroundColor: "var(--bg-light)" }}
       >
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="fw-bold color-liblue">Solutions Tailored for <span className="color-orange">Every Industry</span> </h2>
             <p className="text-muted">Kashi Digital API adapts to various industry needs for safer, more efficient processes.</p>
           </div>
-          {/* Industry Tabs */}
+          {/* industryTabs */}
           <ul
             className="nav nav-underline justify-content-center mb-4 industry-tabs"
             id="industryTabs"
@@ -181,9 +180,9 @@ function Home() {
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link active"
-                id="fintech-tab"
+                id="Banking-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#fintech"
+                data-bs-target="#banking"
                 type="button"
                 role="tab"
               >
@@ -193,9 +192,9 @@ function Home() {
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link"
-                id="lending-tab"
+                id="legal-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#lending"
+                data-bs-target="#legal"
                 type="button"
                 role="tab"
               >
@@ -205,9 +204,9 @@ function Home() {
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link"
-                id="insurance-tab"
+                id="healthcare-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#insurance"
+                data-bs-target="#healthcare"
                 type="button"
                 role="tab"
               >
@@ -217,9 +216,9 @@ function Home() {
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link"
-                id="government-tab"
+                id="ecommerce-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#government"
+                data-bs-target="#ecommerce"
                 type="button"
                 role="tab"
               >
@@ -232,78 +231,76 @@ function Home() {
             className="tab-content bg-white rounded-3 shadow-sm p-4"
             id="industryTabsContent"
           >
-            {/* Fintech */}
+            {/* banking */}
             <div
               className="tab-pane fade show active"
-              id="fintech"
+              id="banking"
               role="tabpanel"
-              aria-labelledby="fintech-tab"
+              aria-labelledby="Banking-tab"
             >
               <div className="row g-4">
-                <div className="col-md-6">
-                 <img src="/assets/images/Financial Services-I5usMOwt.svg" alt="image" className="img-fluid" />
+                <div className="col-md-6 text-center">
+                 <img src="/assets/images/Financial Services-I5usMOwt.svg" alt="image" className="img-fluid w-75" />
                 </div>
                 <div className="col-md-6">
                  <h4 className="color-liblue fs-2">Streamline your compliance checks with KYC, Aadhaar, and transaction verifications, perfect for onboarding, credit scoring, and fraud prevention.</h4>
                 </div>
               </div>
             </div>
-            {/* Lending */}
+            {/* legal */}
             <div
               className="tab-pane fade"
-              id="lending"
+              id="legal"
               role="tabpanel"
-              aria-labelledby="lending-tab"
+              aria-labelledby="legal-tab"
             >
              <div className="row g-4">
-                <div className="col-md-6">
-                 <img src="/assets/images/legal-CCrT7BEo.svg" alt="image" className="img-fluid" />
+                <div className="col-md-6 text-center">
+                 <img src="/assets/images/legal-CCrT7BEo.svg" alt="image" className="img-fluid w-75" />
                 </div>
                 <div className="col-md-6">
                  <h4 className="color-liblue fs-2">Enable efficient management of legal documents, court records, and contract verification with OCR and Court APIs, making data retrieval and processing seamless.</h4>
                 </div>
               </div>
             </div>
-            {/* Insurance */}
+            {/* healthcare */}
             <div
               className="tab-pane fade"
-              id="insurance"
+              id="healthcare"
               role="tabpanel"
-              aria-labelledby="insurance-tab"
+              aria-labelledby="healthcare-tab"
             >
                <div className="row g-4">
-                <div className="col-md-6">
-                 <img src="/assets/images/Healthcare-DIi6Y3jv.svg" alt="image" className="img-fluid" />
+                <div className="col-md-6 text-center">
+                 <img src="/assets/images/Healthcare-DIi6Y3jv.svg" alt="image" className="img-fluid w-75" />
                 </div>
                 <div className="col-md-6">
                  <h4 className="color-liblue fs-2">Digitize records and prescriptions with OCR APIs, improving patient data handling and facilitating efficient record-keeping.</h4>
                 </div>
               </div>
             </div>
-            {/* Government */}
+            {/* ecommerce */}
             <div
               className="tab-pane fade"
-              id="government"
+              id="ecommerce"
               role="tabpanel"
-              aria-labelledby="government-tab"
+              aria-labelledby="ecommerce-tab"
             >
               <div className="row g-4">
-                <div className="col-md-6">
-                 <img src="/assets/images/Ecommerce-CYKH7tly.svg" alt="image" className="img-fluid" />
+                <div className="col-md-6 text-center">
+                 <img src="/assets/images/Ecommerce-CYKH7tly.svg" alt="image" className="img-fluid w-75" />
                 </div>
                 <div className="col-md-6">
                  <h4 className="color-liblue fs-2">Leverage our APIs for automated processing of invoices, shipping labels, and tracking information, making your supply chain management more efficient.</h4>
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
       {/* ===== How It Works ===== */}
       <section
         className="py-5 bg-light"
-        style={{ backgroundColor: "var(--bg-light)" }}
       >
         <div className="container">
           <div className="text-center mb-5">
@@ -374,8 +371,7 @@ function Home() {
       <Kashiwork/>
       <Feature/>
       {/* ===== Testimonials ===== */}
-      <Testimonials/>
-    
+      <Testimonials/> 
     </>
   );
 }

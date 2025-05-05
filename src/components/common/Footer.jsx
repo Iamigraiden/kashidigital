@@ -81,15 +81,15 @@ const Footer = () => {
         </div>
         <div className="col-lg-8">
           <div className="row row-gap-3">
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-6">
               <h5 className="text-white mb-3">Quick Links</h5>
               <ul className="list-unstyled">
                 <li className="mb-2">
                   <NavLink
-                    to="#"
+                    to="/"
                     className="text-white-50 hover-white text-decoration-none"
                   >
-                    Products
+                    Home
                   </NavLink>
                 </li>
                 <li className="mb-2">
@@ -110,10 +110,10 @@ const Footer = () => {
                 </li>
                 <li className="mb-2">
                   <NavLink
-                    to="/"
+                    to="/faq"
                     className="text-white-50 hover-white text-decoration-none"
                   >
-                    Docs
+                    FAQʼs
                   </NavLink>
                 </li>
                 <li className="mb-2">
@@ -142,7 +142,7 @@ const Footer = () => {
                 </li>        
               </ul>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-6">
               <h5 className="text-white mb-3">Social Media</h5>
               <ul className="list-unstyled text-white-50">
                 <li className="mb-2 hover-white ">
@@ -219,16 +219,15 @@ const Footer = () => {
         </div>
       </div>
       <hr
-        className="my-4"
-        style={{ borderColor: "rgba(255, 255, 255, 0.1)" }}
+        className="my-4 bg-white text-white"
       />
       <div className="row">
-        <div className="col-md-6">
-          <p className="small text-white-50">
+        <div className="col-md-6 order-1">
+          <p className="small text-white-50 text-md-start text-center">
             © 2025 Kashi Digital Agency Pvt. Ltd. All Rights Are Reserved.
           </p>
         </div>
-        <div className="col-md-6 text-md-end">
+        <div className="col-md-6 text-md-end text-center order-0 order-md-1">
           <NavLink to="/privacy" className="small text-white-50 hover-white me-3">
             Privacy Policy
           </NavLink>
