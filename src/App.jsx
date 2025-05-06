@@ -1,8 +1,7 @@
 import './App.css'
 import Header from './components/common/Header'
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import './../node_modules/bootstrap/dist/js/bootstrap.min.js';
-import './../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Home from './pages/Home.jsx';
 import Footer from './components/common/Footer.jsx';
@@ -15,7 +14,7 @@ import Error from './pages/Error.jsx';
 import FaqPage from './pages/FaqPage.jsx';
 function App() {
 
-  return (
+  return (  
     <>
    <Routes>
         <Route path='*' element={<Error />} />        

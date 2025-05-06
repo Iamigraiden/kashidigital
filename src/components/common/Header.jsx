@@ -51,12 +51,12 @@ const Header = () => {
               >
                 Products
               </span>
-              <ul className="dropdown-menu" aria-labelledby="productsDropdown">
-                <li>
+              <div className="dropdown-menu headerdropdown px-3 shadow border-0" aria-labelledby="productsDropdown">
+                <div className="row">
+               <div className='col-lg-4'>
                   <h6 className="dropdown-header">Identity Verification</h6>
-                </li>
                 <li data-bs-dismiss="offcanvas">
-                  <NavLink className="dropdown-item" to="/u">
+                  <NavLink className="dropdown-item" to="/a">
                     <i className="bi bi-shield-check me-2" /> Aadhaar eKYC
                   </NavLink>
                 </li >
@@ -65,9 +65,9 @@ const Header = () => {
                     <i className="bi bi-credit-card me-2" /> PAN Verification
                   </NavLink>
                 </li>
-                <li data-bs-dismiss="offcanvas">
-                  <hr className="dropdown-divider" />
-                </li>
+                </div>
+               
+                <div className='col-lg-4'>
                 <li data-bs-dismiss="offcanvas">
                   <h6 className="dropdown-header">Financial APIs</h6>
                 </li>
@@ -76,7 +76,19 @@ const Header = () => {
                     <i className="bi bi-bank me-2" /> Account Validation
                   </NavLink>
                 </li>
-              </ul>
+                </div>
+                <div className='col-lg-4'>
+                <li data-bs-dismiss="offcanvas">
+                  <h6 className="dropdown-header">Financial APIs</h6>
+                </li>
+                <li data-bs-dismiss="offcanvas">
+                  <NavLink className="dropdown-item" to="/i">
+                    <i className="bi bi-bank me-2" /> Account Validation
+                  </NavLink>
+                </li>
+                </div>
+                </div>
+              </div>
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
               <NavLink className="nav-link" to="/industries">
@@ -104,7 +116,7 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-          <div className="ms-lg-3 login-btn">
+          <div className="ms-lg-3 login-btn align-self-center">
             <NavLink to="/login" className="btn me-2 text-white">
               Login
             </NavLink>

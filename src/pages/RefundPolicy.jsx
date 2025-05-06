@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Mail, AlertCircle, CheckCircle, XCircle } from 'lucide-react';
+import { AlertCircle, CheckCircle, XCircle } from 'lucide-react';
 
 const RefundPolicy = () => {
   return (

@@ -45,7 +45,6 @@ const FaqPage = () => {
           <p className="text-muted">Everything You Need to Know!</p>
         </div>
 </div>
-
         <div className="container pt-5">
         <div className="accordion faqaccordion" id="faqAccordion">
           {faqs.map((faq, index) => (
