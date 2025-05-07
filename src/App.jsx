@@ -12,6 +12,8 @@ import TermsAndConditions from './pages/TermsPage.jsx';
 import RefundPolicy from './pages/RefundPolicy.jsx';
 import Error from './pages/Error.jsx';
 import FaqPage from './pages/FaqPage.jsx';
+import Contact from './pages/Contact.jsx';
+import Services from './pages/Services.jsx';
 function App() {
 
   return (  
@@ -29,6 +31,8 @@ function App() {
           <Route path='/terms' element={<TermsAndConditions />} />
           <Route path='/refund' element={<RefundPolicy />} />
           <Route path='/faq' element={<FaqPage />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/services/:serviceId' element={<Services />} />
 
         </Route>
       </Routes>

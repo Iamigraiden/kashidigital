@@ -36,8 +36,8 @@ return (
 <div className="container py-4">
 <div className="row align-items-center">
 <div className="col-lg-8 mx-auto text-center">
-  <Shield size={48} className="color-liblue mb-3" />
-  <h1 className="display-5 fw-semibold mb-3 color-liblue">
+  <Shield size={48} className="color-liprimary mb-3" />
+  <h1 className="display-5 fw-semibold mb-3 color-liprimary">
     Privacy Policy
   </h1>
 </div>

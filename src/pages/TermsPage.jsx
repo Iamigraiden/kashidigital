@@ -67,8 +67,8 @@ const TermsAndConditions = () => {
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-8 mx-auto text-center">
-              <FileText size={48} className="color-liblue mb-3" />
-              <h1 className="display-5 fw-bold mb-3 color-liblue">Terms & Conditions</h1>
+              <FileText size={48} className="color-liprimary mb-3" />
+              <h1 className="display-5 fw-bold mb-3 color-liprimary">Terms & Conditions</h1>
             </div>
           </div>
         </div>

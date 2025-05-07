@@ -13,6 +13,8 @@
     --purple:#9334eb;
     --liblue:#034d74;
     --orange:#fb923c;
+    --liprimary:#4c7b98;
+    --dblue:#06052a;
   }
   a{
     text-decoration: none !important;
@@ -31,6 +33,15 @@
   }
   .color-orange{
     color: var(--orange) !important;
+  }
+  .color-liprimary{
+    color: var(--liprimary) !important;
+  }
+  .fw-reg{
+    font-weight: 500 !important;
+  }
+  .bg-dblue{
+    background-color: var(--dblue) !important;
   }
   body {
       font-family: "Poppins", sans-serif !important;

@@ -10,9 +10,9 @@ const RefundPolicy = () => {
           <div className="row align-items-center">
             <div className="col-lg-8 mx-auto text-center">
               <div className="bg-primary bg-opacity-10 rounded-circle d-inline-flex p-4 mb-3">
-                <AlertCircle size={48} className="text-primary" />
+                <AlertCircle size={48} className="color-liprimary" />
               </div>
-              <h1 className="display-5 fw-bold mb-3 color-liblue">Refund Policy</h1>
+              <h1 className="display-5 fw-bold mb-3 color-liprimary">Refund Policy</h1>
             </div>
           </div>
         </div>
