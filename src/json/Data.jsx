@@ -61,15 +61,18 @@ export const serviceData = [
     ],
     work: [
       {
+        image:"https://kashidigitalapis.com/assets/step1-D658MzzE.jpg",
         title: "Input Aadhaar & PAN",
         discription: "The user provides their Aadhaar and PAN details.",
       },
       {
+        image:"https://kashidigitalapis.com/assets/step-2-DqIkmqJ4.jpg",
         title: "Cross-Verification",
         discription:
           "The API verifies Aadhaar details against the PAN database.",
       },
       {
+        image:"	https://kashidigitalapis.com/assets/step-3-BmP2qlEk.jpg",
         title: "Instant Response",
         discription: "The system returns a match/no-match result in real time.",
       },
@@ -164,15 +167,18 @@ export const serviceData = [
     ],
     work: [
       {
+        image:"https://kashidigitalapis.com/assets/step1-D658MzzE.jpg",
         title: "Enter PAN Number",
         discription: "The API takes a PAN card number as input.",
       },
       {
+        image:"https://kashidigitalapis.com/assets/step-2-DqIkmqJ4.jpg",
         title: "Fetch PAN Details",
         discription:
           "The system retrieves name, date of birth, gender, and father's name.",
       },
       {
+        image:"	https://kashidigitalapis.com/assets/step-3-BmP2qlEk.jpg",
         title: "Instant Verification",
         discription:
           "Results are provided in real-time for seamless KYC processing.",
@@ -275,14 +281,17 @@ export const serviceData = [
     ],
     work: [
       {
+        image:"https://kashidigitalapis.com/assets/step1-D658MzzE.jpg",
         title: "Enter PAN Number",
         discription: "Enter the PAN card number to be verified.",
       },
       {
+        image:"https://kashidigitalapis.com/assets/step-2-DqIkmqJ4.jpg",
         title: "Fetch PAN Details",
         discription: "The system retrieves father's name and PAN status.",
       },
       {
+        image:"	https://kashidigitalapis.com/assets/step-3-BmP2qlEk.jpg",
         title: "Instant Verification",
         discription: "The API provides real-time validation.",
       },
@@ -384,11 +393,13 @@ export const serviceData = [
     ],
     work: [
       {
+        image:"https://kashidigitalapis.com/assets/step1-D658MzzE.jpg",
         title: "Generate Aadhaar OTP",
         discription:
           "Users enter their Aadhaar number to receive an OTP on their registered mobile number via UIDAI's authentication system.",
       },
       {
+        image:"https://kashidigitalapis.com/assets/step-2-DqIkmqJ4.jpg",
         title: "Download Aadhaar Data",
         discription:
           "Upon successful OTP validation, the API provides Aadhaar holder details including name, DOB, gender, address, and verification files.",
@@ -524,15 +535,18 @@ export const serviceData = [
     ],
     work: [
       {
+        image:"https://kashidigitalapis.com/assets/step1-D658MzzE.jpg",
         title: "Enter Vehicle Number",
         discription: "Provide the RC number as input.",
       },
       {
+        image:"https://kashidigitalapis.com/assets/step-2-DqIkmqJ4.jpg",
         title: "API Fetches Data",
         discription:
           "The system retrieves vehicle details from official databases.",
       },
       {
+        image:"	https://kashidigitalapis.com/assets/step-3-BmP2qlEk.jpg",
         title: "Receive Instant Response",
         discription:
           "Get real-time registration details, insurance status, and compliance data.",
@@ -707,15 +721,18 @@ export const serviceData = [
     ],
     work: [
       {
+        image:"https://kashidigitalapis.com/assets/step1-D658MzzE.jpg",
         title: "Enter Vehicle/DL Number",
         discription: "Provide the RC number or DL number as input.",
       },
       {
+        image:"https://kashidigitalapis.com/assets/step-2-DqIkmqJ4.jpg",
         title: "API Fetches Challan Data",
         discription:
           "The system retrieves e-challan details from official databases.",
       },
       {
+        image:"	https://kashidigitalapis.com/assets/step-3-BmP2qlEk.jpg",
         title: "Receive Instant Response",
         discription:
           "Get pending challans, payment status, and violation details in real time.",
@@ -827,14 +844,17 @@ export const serviceData = [
     ],
     work: [
       {
+        image:"https://kashidigitalapis.com/assets/step1-D658MzzE.jpg",
         title: "Enter GSTIN",
         discription: "The user provides a 15-digit GST identification number.",
       },
       {
+        image:"https://kashidigitalapis.com/assets/step-2-DqIkmqJ4.jpg",
         title: "API Validation",
         discription: "The API fetches details from the official GST database.",
       },
       {
+        image:"	https://kashidigitalapis.com/assets/step-3-BmP2qlEk.jpg",
         title: "Response Generated",
         discription:
           "Business details like legal name, status, and GSTIN validation result are returned.",

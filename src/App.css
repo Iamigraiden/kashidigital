@@ -51,6 +51,9 @@
   .btn-accent,.btn-accent:target,.btn-accent:hover{
       background-color: var(--accent) !important;
   }
+  .contact-form .form-floating label{
+    margin-left: 10px;
+  }
   /* Disable smooth scrolling for route changes */
 html {
   scroll-behavior: auto !important;

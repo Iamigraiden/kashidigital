@@ -1,7 +1,9 @@
 import React from "react";
+import './css/services.css'
 import { useParams } from "react-router";
 import { serviceData } from "../json/Data";
 import { NavLink } from "react-router-dom";
+import { CheckCircle } from "lucide-react";
 const Services = () => {
   const { serviceId } = useParams();
 
@@ -12,7 +14,7 @@ const Services = () => {
         <>
           <div className="container py-md -5">
             {/* Hero Section */}
-            <section className="text-center py-5 mb-5">
+            <section className="text-md-center py-5 mb-5">
               <h1 className="display-5 fw-bold mb-4 color-liblue col-md-8 mx-auto">
                 {services.title}
               </h1>
@@ -37,17 +39,17 @@ const Services = () => {
                           <div className="mb-3 form-floating rounded-0">
                             <input
                               type="text"
-                              className="form-control rounded-0"
+                              className="form-control rounded-0 border-0 border-bottom shadow-none"
                               placeholder="Your Name Here..."
                               id="fullName"
                               required
                             />
                             <label htmlFor="fullName ">Full Name*</label>
                           </div>
-                          <div className="mb-3 form-floating rounded-0">
+                          <div className="mb-3 form-floating rounded-0 ">
                             <input
                               type="email"
-                              className="form-control rounded-0"
+                              className="form-control rounded-0 border-0 border-bottom shadow-none"
                               placeholder="Your Email Here..."
                               id="email"
                               required
@@ -57,14 +59,14 @@ const Services = () => {
                           <div className="mb-3 form-floating">
                             <input
                               type="tel"
-                              className="form-control rounded-0"
+                              className="form-control rounded-0 border-0 border-bottom shadow-none"
                               placeholder="Your Phone Number Here..."
                               id="mobile"
                               required
                             />
                             <label htmlFor="mobile">Mobile</label>
                           </div>
-                          <button className="btn btn-primary w-100">
+                          <button className="btn btn-primary w-100 rounded-3 py-3 mt-4">
                             Submit
                           </button>
                         </form>
@@ -118,9 +120,9 @@ const Services = () => {
                 {services.work.map((step, index) => (
                   <div key={index} className="col-md-4">
                     <div className="card h-100 border-0 shadow-sm p-4 text-center">
-                      <div className="overflow-hidden w-50 rounded-circle mx-auto mb-4  ">
+                      <div className="overflow-hidden rounded-circle mx-auto mb-4 round-img ">
                         <img
-                          src="https://kashidigitalapis.com/assets/step1-D658MzzE.jpg"
+                          src={step.image}
                           alt="image"
                           className="img-fluid"
                         />
@@ -177,10 +179,14 @@ const Services = () => {
                   {services.keyfeature.map((feature, index) => (
                     <div className="col-sm-6" key={index}>
                       <div className="card h-100 border-0 shadow-sm p-4">
-                        <h5 className="d-flex align-items-center">
+                        <div className="d-flex gap-2">
+                          <CheckCircle className="text-success fs-1"/>
+                          <div>
+                        <h5 className="d-flex  gap-2">
                           {feature.title}
                         </h5>
                         <p className="text-muted">{feature.discription}</p>
+                        </div></div>
                       </div>
                     </div>
                   ))}

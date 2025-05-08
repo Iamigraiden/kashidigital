@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="col-lg-7">
             <div className="card border-0 shadow-sm px-md-5 px-4 py-5 h-100 bg-white rounded-0">
               <h3 className="mb-4 color-liblue">Book Time With Our Experts</h3>
-              <form className='pt-4'>
+              <form className='pt-4 contact-form'>
                 <div className="row g-3">
                   <div className="col-md-6 form-floating">
                     <input type="text" className="form-control rounded-0" placeholder="Full Name*" id="fullName" required />

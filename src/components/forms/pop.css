@@ -1,0 +1,128 @@
+/* pop.css */
+.popup-trigger {
+    height: 60px;
+    width: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    cursor: pointer;
+    z-index: 1100;
+    transition: all 0.3s ease;
+  }
+  
+  .popup-trigger:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Modal Styles */
+  .modal-content {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  }
+  
+  .modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  .modal-subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .close-btn:hover {
+    opacity: 1;
+  }
+  
+  .modal-body {
+    padding: 25px;
+  }
+  
+  /* Form Styles */
+  .demo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-input, .form-textarea {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    background: transparent;
+    transition: all 0.3s;
+  }
+  
+  .form-textarea {
+    resize: none;
+    min-height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+  }
+  
+  .floating {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .form-label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .form-input:focus ~ .form-label,
+  .form-input:not(:placeholder-shown) ~ .form-label {
+    top: -15px;
+    left: 0;
+    font-size: 12px;
+    color: #667eea;
+  }
+  
+  .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s;
+  }
+  
+  .form-input:focus ~ .underline {
+    width: 100%;
+  }
+  
+  .submit-btn {
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+  }

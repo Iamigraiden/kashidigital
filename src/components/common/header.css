@@ -7,7 +7,7 @@
   background-color: var(--purple) !important;
 } */
 .headerdropdown .dropdown-item:hover{
-  color: var(--liprimary) !important;
+  color: var(--liprimary) !important  ;
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {

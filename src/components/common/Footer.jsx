@@ -2,10 +2,12 @@ import React from 'react'
 import './footer.css'
 import { NavLink } from 'react-router-dom'
 import { MapPin, Mail } from 'lucide-react';
+import Popup from '../forms/Popup';
 
 const Footer = () => {
   return (
     <>
+    <Popup/>
     {/* ===== Sticky CTA ===== */}
     <div className="sticky-cta py-3 border-top">
         <div className="container">

@@ -94,22 +94,22 @@ const Header = () => {
               </div>
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NavLink className="nav-link" to="/industries">
+              <NavLink className="nav-link pe-none" to="/industries">
                 Industries
               </NavLink>
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NavLink className="nav-link" to="/work">
+              <NavLink className="nav-link pe-none" to="/work">
                 How It Works
               </NavLink>
             </li>
-            <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NavLink className="nav-link" to="/docs">
+            {/* <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NavLink className="nav-link pe-none" to="/docs">
                 Docs
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NavLink className="nav-link" to="/pricing">
+              <NavLink className="nav-link pe-none" to="/pricing">
                 Pricing
               </NavLink>
             </li>
