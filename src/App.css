@@ -43,6 +43,11 @@
   .bg-dblue{
     background-color: var(--dblue) !important;
   }
+  .text-grad{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+  }
   body {
       font-family: "Poppins", sans-serif !important;
     color: var(--text-dark);
@@ -67,7 +72,6 @@
 html {
   scroll-behavior: auto !important;
 }
-
 /* Re-enable smooth scrolling for internal links */
 a[href^="#"] {
   scroll-behavior: smooth;

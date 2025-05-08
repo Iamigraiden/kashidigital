@@ -23,7 +23,7 @@
 }
 .industry-tabs .nav-item .nav-link{
     color: #333333;
-    font-weight: 700;
+    font-weight: 500;
 }
 .industry-tabs .nav-item .nav-link.active{
     color:var(--success);

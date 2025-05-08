@@ -22,10 +22,10 @@ const Services = () => {
                 {services.titleDis}
               </p>
 
-              <div className="row justify-content-center py-5 bg-dblue">
-                <div className="col-md-10">
-                  <div className="card shadow-sm p-4 rounded-4">
-                    <div className="row align-items-center">
+              {/* <div className="py-5">
+                <div className="col-md-12">
+                  <div className="card p-4 rounded-4 border-0">
+                    <div className="row">
                       <div className="col-md-6 mb-4 mb-md-0">
                         <img
                           src={services.formimg}
@@ -33,7 +33,7 @@ const Services = () => {
                           className="img-fluid w-100"
                         />
                       </div>
-                      <div className="col-md-6">
+                      <div className="col-md-6 bg-dblue py-5">
                         <h3 className="mb-4 color-liblue">Request a Demo</h3>
                         <form>
                           <div className="mb-3 form-floating rounded-0">
@@ -74,7 +74,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </section>
 
             {/* Why Choose Us Section */}

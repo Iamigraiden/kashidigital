@@ -364,7 +364,7 @@ export const serviceData = [
       "The Aadhaar with OTP API by Kashi Digital APIs enables businesses to securely verify Aadhaar card details using OTP authentication. This API facilitates seamless KYC verification, fraud prevention, and user authentication while ensuring data security and regulatory compliance.",
       formimg:
       "https://kashidigitalapis.com/assets/link-aadhar-to-pan-wDROFJcv.jpg",
-      name: "Aadhaar OTP Authentication",
+      name: "Generate Aadhaar OTP",
     imageb: "https://kashidigitalapis.com/assets/aadhaar-verification-CMS7zCta.png",
     features: [
       {

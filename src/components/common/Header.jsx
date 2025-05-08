@@ -7,14 +7,14 @@ const Header = () => {
   return (
     <>
   {/* ===== Navbar ===== */}
-  <nav className="navbar navbar-expand-xl navbar-light py-3 sticky-top shadow mainNav bg-light"> 
+  <nav className="navbar navbar-expand-xl navbar-light py-md-3 sticky-top shadow mainNav bg-light"> 
     <div className="container">
       <NavLink className="navbar-brand fw-bold" to="/">
         <img
           src="/assets/images/headerlogo.png"
           alt="Kashi Digital"
           className="img-fluid"
-          width="160px"
+          width="200px"
         />
       </NavLink>
       <button
@@ -49,7 +49,7 @@ const Header = () => {
                 id="productsDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
-              >
+              > 
                 Products
               </span>
               <div className="dropdown-menu headerdropdown px-3 shadow-lg border-0 bg-light" aria-labelledby="productsDropdown">
@@ -59,7 +59,7 @@ const Header = () => {
                   <ul className='list-unstyled product-cat'>
                   {serviceData.filter((filter) => filter.category === "Verification API's").map((data) => (
                     <li data-bs-dismiss="offcanvas" key={data.id}>
-                    <NavLink className="dropdown-item text-muted" to={`/services/${data.id}`}>
+                    <NavLink className="dropdown-item text-muted text-wrap" to={`/services/${data.id}`}>
                       {data.name}
                     </NavLink>
                   </li >
@@ -125,7 +125,7 @@ const Header = () => {
             </NavLink> */}
             <NavLink
               to="/contact"
-              className="btn btn-accent rounded-pill text-white px-4"
+              className="btn contact-btn rounded-pill text-white px-4"
             >
               Get Started
             </NavLink>
