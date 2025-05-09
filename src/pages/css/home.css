@@ -17,17 +17,6 @@
   box-shadow: 0 10px 25px rgba(0, 82, 204, 0.1);
   border-color: rgba(0, 82, 204, 0.2);
 }
-
-.industry-tabs .nav-item{
-    margin-inline: 10px;
-}
-.industry-tabs .nav-item .nav-link{
-    color: #333333;
-    font-weight: 500;
-}
-.industry-tabs .nav-item .nav-link.active{
-    color:var(--success);
-}
 /* Testimonials */  
 .testimonial-card {
   border-left: 3px solid var(--accent);

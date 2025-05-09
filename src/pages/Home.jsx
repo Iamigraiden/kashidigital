@@ -6,6 +6,7 @@ import { Code, CreditCard, Fingerprint, ListOrdered, Rocket, UserPlus } from "lu
 import Kashiwork from "../components/Kashiwork";
 import Testimonials from "../components/Testimonials";
 import Feature from "../components/Feature";
+import IndustryTabs from "../components/IndustryTabs";
 
 function Home() {
   return (
@@ -163,141 +164,7 @@ function Home() {
         </div>
       </section>
       {/* ===== Industries We Serve ===== */}
-      <section
-        className="py-5 bg-light"
-      >
-        <div className="container">
-          <div className="text-center mb-5">
-            <h2 className="fw-bold color-liblue">Solutions Tailored for <span className="color-orange">Every Industry</span> </h2>
-            <p className="text-muted">Kashi Digital API adapts to various industry needs for safer, more efficient processes.</p>
-          </div>
-          {/* industryTabs */}
-          <ul
-            className="nav nav-underline justify-content-center mb-4 industry-tabs"
-            id="industryTabs"
-            role="tablist"
-          >
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link active"
-                id="Banking-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#banking"
-                type="button"
-                role="tab"
-              >
-               Banking & Financial Services
-              </button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link"
-                id="legal-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#legal"
-                type="button"
-                role="tab"
-              >
-             Legal & Compliance
-              </button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link"
-                id="healthcare-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#healthcare"
-                type="button"
-                role="tab"
-              >
-               Healthcare
-              </button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link"
-                id="ecommerce-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ecommerce"
-                type="button"
-                role="tab"
-              >
-              E-commerce & Logistics
-              </button>
-            </li>
-          </ul>
-          {/* Tab Content */}
-          <div
-            className="tab-content bg-white rounded-3 shadow-sm p-4"
-            id="industryTabsContent"
-          >
-            {/* banking */}
-            <div
-              className="tab-pane fade show active"
-              id="banking"
-              role="tabpanel"
-              aria-labelledby="Banking-tab"
-            >
-              <div className="row g-4">
-                <div className="col-md-6 text-center">
-                 <img src="/assets/images/Financial Services-I5usMOwt.svg" alt="image" className="img-fluid w-75" />
-                </div>
-                <div className="col-md-6">
-                 <h4 className="color-liblue fs-2">Streamline your compliance checks with KYC, Aadhaar, and transaction verifications, perfect for onboarding, credit scoring, and fraud prevention.</h4>
-                </div>
-              </div>
-            </div>
-            {/* legal */}
-            <div
-              className="tab-pane fade"
-              id="legal"
-              role="tabpanel"
-              aria-labelledby="legal-tab"
-            >
-             <div className="row g-4">
-                <div className="col-md-6 text-center">
-                 <img src="/assets/images/legal-CCrT7BEo.svg" alt="image" className="img-fluid w-75" />
-                </div>
-                <div className="col-md-6">
-                 <h4 className="color-liblue fs-2">Enable efficient management of legal documents, court records, and contract verification with OCR and Court APIs, making data retrieval and processing seamless.</h4>
-                </div>
-              </div>
-            </div>
-            {/* healthcare */}
-            <div
-              className="tab-pane fade"
-              id="healthcare"
-              role="tabpanel"
-              aria-labelledby="healthcare-tab"
-            >
-               <div className="row g-4">
-                <div className="col-md-6 text-center">
-                 <img src="/assets/images/Healthcare-DIi6Y3jv.svg" alt="image" className="img-fluid w-75" />
-                </div>
-                <div className="col-md-6">
-                 <h4 className="color-liblue fs-2">Digitize records and prescriptions with OCR APIs, improving patient data handling and facilitating efficient record-keeping.</h4>
-                </div>
-              </div>
-            </div>
-            {/* ecommerce */}
-            <div
-              className="tab-pane fade"
-              id="ecommerce"
-              role="tabpanel"
-              aria-labelledby="ecommerce-tab"
-            >
-              <div className="row g-4">
-                <div className="col-md-6 text-center">
-                 <img src="/assets/images/Ecommerce-CYKH7tly.svg" alt="image" className="img-fluid w-75" />
-                </div>
-                <div className="col-md-6">
-                 <h4 className="color-liblue fs-2">Leverage our APIs for automated processing of invoices, shipping labels, and tracking information, making your supply chain management more efficient.</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <IndustryTabs/>
       {/* ===== How It Works ===== */}
       <section
         className="py-5 bg-light"

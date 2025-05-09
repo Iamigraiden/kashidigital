@@ -23,3 +23,26 @@
     width: 100%;
     object-fit: cover;
 }
+/*  */
+.industry-tabs .nav-item .nav-link{
+    color: #495057;
+    font-weight: 500;
+    padding: 12px 24px;
+    position: relative;
+    transition: all 0.3s;
+    background-color: transparent;
+    border: none;
+}
+.industry-tabs .nav-item .nav-link.active{
+    color:var(--success);
+}
+
+  .tab-content .img-fluid {
+    transition: transform 0.3s;
+  }
+  .tab-content .img-fluid:hover {
+    transform: scale(1.02);
+  }
+  .tabs-image img{
+    max-height: 400px;
+  }
