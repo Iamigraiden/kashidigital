@@ -187,21 +187,21 @@ const Form = () => {
                   </div>
                   <div className="d-flex align-items-center mb-2 text-white">
                     <Phone size={20} className="me-3 color-liblue" />
-                    <NavLink
+                    <a
                       href="tel:+919506629981"
                       className="text-decoration-none text-white"
                     >
                       +91-950-662-9981
-                    </NavLink>
+                    </a>
                   </div>
                   <div className="d-flex align-items-center ">
                     <Mail size={20} className="me-3 color-liblue" />
-                    <NavLink
+                    <a
                       href="mailto:sales@kashidigital.in"
                       className="text-decoration-none text-white"
                     >
                       sales@kashidigital.in
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
 
@@ -220,21 +220,21 @@ const Form = () => {
                   </div>
                   <div className="d-flex align-items-center mb-2">
                     <Phone size={20} className="me-3 color-liblue" />
-                    <NavLink
+                    <a
                       href="tel:+19319997270"
                       className="text-decoration-none text-white"
                     >
                       +1 (931) 999-7270
-                    </NavLink>
+                    </a>
                   </div>
                   <div className="d-flex align-items-center">
                     <Mail size={20} className="me-3 color-liblue" />
-                    <NavLink
+                    <a
                       href="mailto:canada@kashidigital.in"
                       className="text-decoration-none text-white"
                     >
                       canada@kashidigital.in
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
               </div>

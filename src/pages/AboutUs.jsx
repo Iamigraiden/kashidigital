@@ -49,10 +49,10 @@ const AboutUs = () => {
                 Our powerful suite of APIs helps Fintech Companies, Vehicle Aggregators, Insurance Providers, and Enterprises integrate real-time data effortlessly.
               </p>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 text-center">
               <img 
                 src={img_about}
-                alt="API Integration" 
+                alt="aboutimage" 
                 className="img-fluid rounded-3 " 
               />
             </div>

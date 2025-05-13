@@ -90,17 +90,17 @@ const Services = () => {
                 <span className="color-orange">{services.name}</span> API?
               </h2>
               <div className="row row-gap-4">
-                <div className="col-md-5">
+                <div className="col-lg-5">
                   <img
                     src={services.imageb}
                     alt="image"
                     className="img-fluid"
                   />
                 </div>
-                <div className="col-md-7">
+                <div className="col-lg-7">
                   <div className="row g-4">
                     {services.features.map((feature, index) => (
-                      <div key={index} className="col-md-4">
+                      <div key={index} className="col-lg-4 col-md-4 ">
                         <div className="card h-100 border-0 shadow-sm px-3 py-4 text-start">
                           {/* {feature.icon} */}
                           <h5 className="color-liblue fs-5">{feature.name}</h5>

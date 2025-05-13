@@ -29,6 +29,10 @@
     }
     .service-card:hover {
       transform: none;
-     
+    }
+  }
+  @media screen and (max-width:767px) {
+    .sticky-cta {
+      position: unset !important;
     }
   }
