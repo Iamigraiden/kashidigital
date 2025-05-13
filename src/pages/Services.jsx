@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { serviceData } from "../json/Data";
 import { NavLink } from "react-router-dom";
 import { CheckCircle } from "lucide-react";
+import { Helmet } from "react-helmet";
 const Services = () => {
   const { serviceId } = useParams();
 
@@ -12,9 +13,14 @@ const Services = () => {
     <>
       {services && (
         <>
-          <div className="container py-md -5">
+     {/* ===== meta tag ===== */}
+        <Helmet>
+        <title>{services.metaTitle}</title>
+        <meta name="description" content={services.metaDis}/>
+        </Helmet>
+          <div className="container py-md-5">
             {/* Hero Section */}
-            <section className="text-md-center py-5 mb-5">
+            <section className="text-md-center py-5">
               <h1 className="display-5 fw-bold mb-4 color-liblue col-md-8 mx-auto">
                 {services.title}
               </h1>
@@ -224,7 +230,7 @@ const Services = () => {
             </section>
 
             {/* Final CTA */}
-            <section className="text-center py-5 mt-5 text-white rounded bg-dblue px-3">
+            <section className="text-center py-5 my-5 text-white rounded bg-dblue px-3">
               <h2 className="fw-bold mb-4">
                 Get Started with {services.name} API Today!
               </h2>

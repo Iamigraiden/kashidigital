@@ -3,11 +3,13 @@ import './header.css'
 import { NavLink } from 'react-router-dom'
 import { serviceData } from '../../json/Data'
 
+
+
 const Header = () => {
   return (
     <>
   {/* ===== Navbar ===== */}
-  <nav className="navbar navbar-expand-xl navbar-light py-md-3 sticky-top shadow mainNav bg-light"> 
+  <nav className="navbar navbar-expand-lg navbar-light py-md-3 sticky-top shadow mainNav bg-light"> 
     <div className="container">
       <NavLink className="navbar-brand fw-bold" to="/">
         <img
@@ -43,6 +45,12 @@ const Header = () => {
         </div>
         <div className="offcanvas-body">
           <ul className="navbar-nav mx-auto main-menu">
+          <li className="nav-item" data-bs-dismiss="offcanvas"  >
+              <NavLink className="nav-link" to="/">
+               Home
+              </NavLink>
+            </li>
+        
             <li className="nav-item dropdown">
               <span
                 className="nav-link dropdown-toggle "
@@ -55,36 +63,51 @@ const Header = () => {
               <div className="dropdown-menu headerdropdown px-3 shadow-lg border-0 bg-light" aria-labelledby="productsDropdown">
                 <div className="row">
                <div className='col-lg-4'>
-                  <h6 className="dropdown-header text-dark fw-reg">KYC Verification API's</h6>
+                  <h6 className="dropdown-header text-dark fw-700 pb-3 text-uppercase ">KYC Verification API's</h6>
                   <ul className='list-unstyled product-cat'>
                   {serviceData.filter((filter) => filter.category === "Verification API's").map((data) => (
                     <li data-bs-dismiss="offcanvas" key={data.id}>
-                    <NavLink className="dropdown-item text-muted text-wrap" to={`/services/${data.id}`}>
-                      {data.name}
+                      
+                    <NavLink className="dropdown-item text-muted d-flex align-items-center" to={`/services/${data.id}`}>
+                    <img
+                    src={data.icon}
+                    alt="image"
+                    className="img-fluid pe-2 float-start" width={35}
+                  /> {data.name}
                     </NavLink>
                   </li >
                   ))}
                 </ul>   
                 </div>
                 <div className='col-lg-4'>
-                  <h6 className="dropdown-header text-dark">Vehicle Data API's</h6>
+                  <h6 className="dropdown-header text-dark fw-700 pb-3 text-uppercase">Vehicle Data API's</h6>
                   <ul className='list-unstyled product-cat'>
                 {serviceData.filter((filter) => filter.category === "Vehicle Data API's").map((data) => (
                     <li data-bs-dismiss="offcanvas" key={data.id}>
-                    <NavLink className="dropdown-item text-muted" to={`/services/${data.id}`}>
-                      {data.name}
+                      
+                    <NavLink className="dropdown-item text-muted d-flex align-items-center" to={`/services/${data.id}`}>
+                    <img
+                    src={data.icon}
+                    alt="image"
+                    className="img-fluid pe-2 float-start" width={35}
+                  />  {data.name}
                     </NavLink>
                   </li >
                   ))}
                   </ul>
                 </div>
                 <div className='col-lg-4'>
-                  <h6 className="dropdown-header text-dark">Business API's</h6>
+                  <h6 className="dropdown-header text-dark fw-700 pb-3 text-uppercase">Business API's</h6>
                   <ul className='list-unstyled product-cat'>
                   {serviceData.filter((filter) => filter.category === "gst verification").map((data) => (
                     <li data-bs-dismiss="offcanvas" key={data.id}>
-                    <NavLink className="dropdown-item text-muted" to={`/services/${data.id}`}>
-                      {data.name}
+                  
+                    <NavLink className="dropdown-item text-muted d-flex align-items-center" to={`/services/${data.id}`}>
+                    <img
+                    src={data.icon}
+                    alt="image"
+                    className="img-fluid pe-2 float-start" width={35}
+                  /> {data.name}
                     </NavLink>
                   </li >
                   ))}
@@ -93,29 +116,34 @@ const Header = () => {
                 </div>
               </div>
             </li>
-            <li className="nav-item" data-bs-dismiss="offcanvas">
+            {/* <li className="nav-item" data-bs-dismiss="offcanvas">
               <NavLink className="nav-link pe-none" to="/industries">
                 Industries
               </NavLink>
-            </li>
-            <li className="nav-item" data-bs-dismiss="offcanvas">
+            </li> */}
+            {/* <li className="nav-item" data-bs-dismiss="offcanvas">
               <NavLink className="nav-link pe-none" to="/work">
                 How It Works
               </NavLink>
-            </li>
+            </li> */}
             {/* <li className="nav-item" data-bs-dismiss="offcanvas">
               <NavLink className="nav-link pe-none" to="/docs">
                 Docs
               </NavLink>
             </li> */}
-            <li className="nav-item" data-bs-dismiss="offcanvas">
+            {/* <li className="nav-item" data-bs-dismiss="offcanvas">
               <NavLink className="nav-link pe-none" to="/pricing">
                 Pricing
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item" data-bs-dismiss="offcanvas"  >
               <NavLink className="nav-link" to="/about">
                 About Us
+              </NavLink>
+            </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas"  >
+              <NavLink className="nav-link" to="/contact">
+                Contact Us
               </NavLink>
             </li>
           </ul>

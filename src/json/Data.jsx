@@ -26,6 +26,8 @@ export const clientsLogo = [
 export const serviceData = [
   {
     id: "aadhaar-to-pan",
+    metaTitle: "Aadhaar Verification API - Link Aadhaar to PAN",
+    metaDis:"Use our Aadhaar Verification API to link Aadhaar with PAN in real time. Fast, secure, and reliable KYC for your app or platform.",
     category: "Verification API's",
     title: "Aadhaar to PAN Verification API",
     titleDis:
@@ -33,6 +35,7 @@ export const serviceData = [
     formimg:
       "https://kashidigitalapis.com/assets/link-aadhar-to-pan-wDROFJcv.jpg",
     name: "Aadhaar to PAN",
+    icon: "../assets/images/icons/credit-card_5227096.png",
     imageb:
       "https://kashidigitalapis.com/assets/aadhaar-verification-CMS7zCta.png",
     features: [
@@ -135,12 +138,15 @@ export const serviceData = [
   },
   {
     id: "pan-verification",
+    metaTitle: "Pan Verification API - Get PAN Instantly",
+    metaDis:"Instantly verify any PAN using our PAN Verification API. Fast, secure, and reliable solution for KYC, fintech, and identity verification needs.",
     category: "Verification API's",
     title: "Verify PAN Card Details Instantly with Kashi Digital APIs",
     titleDis:
       "The Pan Locator API by Kashi Digital APIs enables businesses and financial institutions to instantly verify PAN card details with high accuracy. This KYC (Know Your Customer) verification solution helps streamline user onboarding, fraud prevention, and compliance checks by fetching PAN-related details directly from authorized sources.",
     formimg: "https://kashidigitalapis.com/assets/pan-BQkya33s.jpg",
     name: "PAN Locator",
+    icon: "../assets/images/icons/maps_4024325.png",
     imageb: "https://kashidigitalapis.com/assets/pan-locate-D3ehyOQg.jpg",
     features: [
       {
@@ -250,12 +256,15 @@ export const serviceData = [
   },
   {
     id: "pan-to-father-name",
+    metaTitle: "PAN Verification API - Get Father's Name by PAN",
+    metaDis:"Our PAN Verification API instantly fetches the father's name linked to a PAN. Secure, reliable, and perfect for KYC and compliance checks.",
     category: "Verification API's",
     title: "Verify PAN Card Holder Details Instantly with Pan Verification APIs",
     titleDis:
       "The PAN to Full Name with Father Name API by Kashi Digital APIs enables businesses to instantly fetch a PAN card holder’s father’s name and PAN status for seamless KYC verification, fraud prevention, and compliance checks.",
     formimg: "https://kashidigitalapis.com/assets/pan-BQkya33s.jpg",
     name: "PAN to Father Name",
+    icon: "../assets/images/icons/membership_2037724.png",
     imageb: "https://kashidigitalapis.com/assets/pan-locate-D3ehyOQg.jpg",
     features: [
       {
@@ -358,6 +367,8 @@ export const serviceData = [
   },
   {
     id: "aadhaar-otp-authentication",
+    metaTitle: "Generate Aadhaar OTP - Link Aadhaar to PAN Easily",
+    metaDis:"Generate Aadhaar OTP to link Aadhaar to PAN securely. Use our API for instant, reliable Aadhaar to PAN verification and eKYC compliance.",
     category: "Verification API's",
     title: "Authenticate Aadhaar Details Securely with Kashi Digital APIs",
     titleDis:
@@ -365,6 +376,7 @@ export const serviceData = [
       formimg:
       "https://kashidigitalapis.com/assets/link-aadhar-to-pan-wDROFJcv.jpg",
       name: "Generate Aadhaar OTP",
+      icon: "../assets/images/icons/pin_9042592.png",
     imageb: "https://kashidigitalapis.com/assets/aadhaar-verification-CMS7zCta.png",
     features: [
       {
@@ -504,12 +516,15 @@ export const serviceData = [
   },
   {
     id: "rc-details",
+    metaTitle: "RC Details API - Get Vehicle Owner Info Instantly",
+    metaDis:"Instantly fetch vehicle registration (RC) details with our RC Details API. Access owner's name, vehicle specs, and more. Fast, secure, and accurate data.",
     category:"Vehicle Data API's",
     title: "Seamless Vehicle RC Details API Verification & Compliance",
     titleDis:
       "The RC Details API by Kashi Digital APIs provides instant access to official vehicle registration details, helping businesses, financial institutions, and government agenciesverify vehicle data efficiently. Whether you need to authenticate vehicle ownership, check insurance validity, or prevent fraud, our API delivers accurate and real-time vehicle registration data.",
     formimg: "https://kashidigitalapis.com/assets/rc-_axuoKLv.jpg",
     name: "RC Details",
+    icon: "../assets/images/icons/car-inspection_15579985.png",
     imageb: "https://kashidigitalapis.com/assets/rc-verify-ScqMRdXG.jpg",
     features: [
       {
@@ -689,12 +704,15 @@ export const serviceData = [
   },
   {
     id: "challan-verification",
+    metaTitle: "Vehicle Challan Verification API - Check Vehicle Challans",
+    metaDis:"Verify pending traffic challans using our Vehicle  Challan Verification API. Get vehicle challan data instantly for KYC, compliance, and transport apps.",
     category:"Vehicle Data API's",
     title: "Instant e-Challan Verification for Vehicles",
     titleDis:
       "The Challan API by Kashi Digital APIs provides real-time access to traffic violation and penalty records, ensuringseamless e-challan verification for individuals, businesses, and law enforcement agencies. Whether you need to check pending fines, verify a vehicle's challan history, or integrate challan verification into your services, our API delivers accurate and instant results.",
     formimg: "https://kashidigitalapis.com/assets/challan-BWpWXYta.jpg",
     name: "Challan Details",
+    icon: "../assets/images/icons/test_5999357.png",
     imageb: "https://kashidigitalapis.com/assets/challan-verify-CvNbdM6p.jpg",
     features: [
       {
@@ -813,12 +831,15 @@ export const serviceData = [
   },
   {
     id: "gst-verification",
+    metaTitle: "GST Verification API - Verify GSTIN Instantly",
+    metaDis:"Use our GST Verification API to verify GSTIN details in real time. Fast, accurate, and secure solution for businesses and compliance platforms.",
     category:"gst verification",
     title: "Verify GST Details Instantly with GST Verification APIs",
     titleDis:
       "The GST Verification API by Kashi Digital APIs enables businesses to validate GSTIN (Goods and Services Tax Identification Number) details in real-time. This API helps organizations ensure compliance, prevent fraud, and streamline business verification processes.",
     formimg: "https://kashidigitalapis.com/assets/gst-unfbFrLx.jpg",
     name: "GST Verification",
+    icon: "../assets/images/icons/consultation_10570264.png",
     imageb: "https://kashidigitalapis.com/assets/gst-verify-qepYyN8c.jpeg",
     features: [
       {

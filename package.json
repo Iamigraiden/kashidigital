@@ -12,14 +12,19 @@
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.6.0",
     "@popperjs/core": "^2.11.8",
+    "axios": "^1.9.0",
     "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.12.1",
+    "formik": "^2.4.6",
+    "helmet": "^8.1.0",
     "lucide-react": "^0.507.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^7.5.3",
     "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",

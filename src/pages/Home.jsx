@@ -7,10 +7,16 @@ import Kashiwork from "../components/Kashiwork";
 import Testimonials from "../components/Testimonials";
 import Feature from "../components/Feature";
 import IndustryTabs from "../components/IndustryTabs";
+import { Helmet } from "react-helmet";
 
 function Home() {
   return (
     <>
+    {/* ===== meta tag ===== */}
+    <Helmet>
+    <title>Home - Identity Verification APIs Platform</title>
+    <meta name="description" content="Kashi Digital APIs offers fast, secure verification APIs including Aadhaar, PAN, GST, and RC details. Simplify KYC, compliance, and onboarding." />
+    </Helmet>
       {/* ===== Hero Section ===== */}
       <section className="bg-light py-md-5">
         <div className="container py-5">
@@ -23,10 +29,10 @@ function Home() {
               Streamline your business processes with powerful APIs for identity verification, fraud detection, and document digitization. Scale your operations effortlessly with flexible pricing and industry-specific API bundles.
               </p>
               <div className="d-flex flex-wrap gap-3">
-                <a href="#" className="btn btn-primary btn-lg px-4">
+                <a href="#form_area" className="btn btn-primary btn-lg px-4">
                   Get API Access
                 </a>
-                <a href="#" className="btn btn-outline-primary btn-lg px-4">
+                <a href="#form_area" className="btn btn-outline-primary btn-lg px-4">
                   Request Demo
                 </a>
               </div>

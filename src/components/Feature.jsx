@@ -51,7 +51,7 @@ const Feature = () => {
 
         <div className="row g-4 mb-5 justify-content-center">
           {features.map((feature, index) => (
-            <div className="col-lg-4 col-md-6" key={index}>
+            <div className="col-lg-3 col-md-6" key={index}>
               <div className="card h-100 border-0 p-4 shadow-sm text-center">
                 {feature.icon}
                 <h3 className="h4 fw-bold mb-3">{feature.title}</h3>

@@ -1,12 +1,16 @@
 import React from 'react'
 import './footer.css'
 import { NavLink } from 'react-router-dom'
-import { MapPin, Mail } from 'lucide-react';
+// import { MapPin, Mail } from 'lucide-react';
 import Popup from '../forms/Popup';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import Form from '../forms/Form';
+// import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <>
+      <Form/>
     <Popup/>
     {/* ===== Sticky CTA ===== */}
     <div className="sticky-cta py-3 border-top">
@@ -40,7 +44,7 @@ const Footer = () => {
         <div className="col-lg-4">
         <NavLink className="navbar-brand fw-bold" to="/">
         <img
-          src="/assets/images/kashi-logo.png"
+          src="/assets/images/footerlogo.png"
           alt="Kashi Digital"
           className="img-fluid"
           width="250px"
@@ -76,7 +80,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="text-white-50 small">
+            <div className="text-white-50 small ps-md-4">
               <p className="mb-1">CIN: U62099UP2024PTC19785S</p>
               <p>GSTIN: 09ALVPY1138Q12W</p>
             </div>
@@ -186,13 +190,13 @@ const Footer = () => {
               <div className="mt-4">
                 <h5 className="text-white mb-3">Certifications</h5>
                 <div className="d-flex flex-column gap-2">
-                  <NavLink to="https://www.digitalindia.gov.in/" target='_blank' className="col-md-12 col-10 mx-auto">
+                  <NavLink to="https://www.digitalindia.gov.in/" target='_blank' className="col-md-6">
                   <img
                     src="/assets/images/DigitalIndiaLogo-CiZR7aUc.jpg"
                     alt="digitalindia"
                     className="img-fluid"
                   /></NavLink>
-                   <NavLink to="https://gem.gov.in/" className="col-md-12 col-10 mx-auto" target='_blank'>
+                   <NavLink to="https://gem.gov.in/" className="col-md-6" target='_blank'>
                   <img
                     src="/assets/images/GemGovLogo-BXjU9Rmd.png"
                     alt="gem.gov"
@@ -201,7 +205,7 @@ const Footer = () => {
                   <img
                     src="/assets/images/StartupIndia-Abi8Sn70.jpg"
                     alt="StartupIndia"
-                    className="img-fluid col-md-12 col-10 mx-auto"
+                    className="img-fluid col-md-8 col-10 "
                   />
                   <img
                     src="/assets/images/f1.png"

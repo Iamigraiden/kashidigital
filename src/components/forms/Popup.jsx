@@ -1,11 +1,67 @@
 import { MessageSquareMore } from 'lucide-react';
 import './pop.css';
 import React from 'react';
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import axios from 'axios';
+
+const initialValues = {
+  name: "",
+  email: "",
+  mobile: "",
+  message: "",
+};
 
 const Popup = () => {
+  const {values, errors, handleBlur, touched, resetForm, handleChange, handleSubmit, isSubmitting} = useFormik({
+    initialValues: initialValues,
+    validationSchema: Yup.object({
+      name: Yup.string().min(2).max(25).required("Please enter your name"),
+      email: Yup.string().email('Invalid email address').required('Required'),
+      mobile: Yup.string().matches(/^[6-9]\d{9}$/, {message: "Please enter valid number.", excludeEmptyString: false}).required('Required'),
+    }),
+    onSubmit: async (values, { setSubmitting, resetForm, setFieldError }) => {
+      try {
+        const response = await axios.post(
+          'https://core.kashidigitalapis.com/user/request-demo',
+          {
+            name: values.name,
+            businessEmail: values.email,
+            phone: values.mobile,
+            message:values.message
+          },
+          {
+            headers: {
+              'sec-ch-ua-platform': 'macOS',
+              'Referer': 'https://kashidigitalapis.com/',
+              'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36',
+              'Accept': 'application/json, text/plain, */*',
+              'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"',
+              'Content-Type': 'application/json',
+              'sec-ch-ua-mobile': '?0'
+            }
+          }
+        );
+
+        if (response.status === 200) {
+          alert('Request submitted successfully!');
+          resetForm();
+        } 
+        else {
+          alert('Failed to submit request. Please try again.');
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('An error occurred. Please try again later.');
+      } finally {
+        setSubmitting(false);
+      }
+    }
+  });
+
   return (
     <>
-      <div className='popup-trigger d-flex align-items-center justify-content-center position-fixed bottom-0 end-0 m-2 rounded-circle'data-bs-toggle="modal" 
+      <div className='popup-trigger d-flex align-items-center justify-content-center position-fixed bottom-0 end-0 m-2 rounded-circle' data-bs-toggle="modal" 
           data-bs-target="#demoModal" >
         <MessageSquareMore 
           className='message-icon text-white' 
@@ -28,57 +84,85 @@ const Popup = () => {
               </button>
             </div>
             <div className="modal-body">
-              <form className="demo-form">
-                <div className="form-group floating">
-                  <input 
-                    type="text" 
-                    id="name" 
-                    className="form-input"
-                    placeholder=" "
-                    required
-                  />
-                  <label htmlFor="name" className="form-label">Your Name</label>
-                  <div className="underline"></div>
+              <form className="demo-form" onSubmit={handleSubmit}>
+                <div className="floating">
+                  <div className="form-group">
+                    <input 
+                      type="text" 
+                      id="name" 
+                      className="form-input"
+                      placeholder=" "
+                      name="name"
+                      value={values.name}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      required
+                    />
+                    <label htmlFor="name" className="form-label">Your Name</label>
+                    <div className="underline"></div>
+                  </div>
+                  {errors.name && touched.name ? (<div className="mb-0 text-danger form-text">{errors.name}</div>) : null}
                 </div>
                 
-                <div className="form-group floating">
-                  <input 
-                    type="email" 
-                    id="email" 
-                    className="form-input"
-                    placeholder=" "
-                    required
-                  />
-                  <label htmlFor="email" className="form-label">Email Address</label>
-                  <div className="underline"></div>
+                <div className="floating">
+                  <div className="form-group">
+                    <input 
+                      type="email" 
+                      id="email" 
+                      className="form-input"
+                      placeholder=" "
+                      name="email"
+                      value={values.email}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      required
+                    />
+                    <label htmlFor="email" className="form-label">Email Address</label>
+                    <div className="underline"></div>
+                  </div>
+                  {errors.email && touched.email ? (<div className="mb-0 text-danger form-text">{errors.email}</div>) : null}
                 </div>
                 
-                <div className="form-group floating">
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    className="form-input"
-                    placeholder=" "
-                    required
-                  />
-                  <label htmlFor="phone" className="form-label">Phone Number</label>
-                  <div className="underline"></div>
+                <div className="floating">
+                  <div className="form-group">
+                    <input 
+                      type="number" 
+                      id="phone" 
+                      className="form-input"
+                      placeholder=" "
+                      name="mobile"
+                      value={values.mobile}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      required
+                    />
+                    <label htmlFor="phone" className="form-label">Phone Number</label>
+                    <div className="underline"></div>
+                  </div>
+                  {errors.mobile && touched.mobile ? (<div className="mb-0 text-danger form-text">{errors.mobile}</div>) : null}
                 </div>
                 
-                <div className="form-group">
-                  <textarea 
-                    id="message" 
-                    className="form-textarea"
-                    rows="3"
-                    placeholder="Message..."
-                  ></textarea>
+                <div className="floating">
+                  <div className="form-group">
+                    <textarea 
+                      id="message" 
+                      className="form-textarea"
+                      rows="3"
+                      placeholder="Message..."
+                      name="message"
+                      value={values.message}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    ></textarea>
+                  </div>
                 </div>
                 
                 <button 
                   type="submit" 
                   className="submit-btn fs-6"
+                  disabled={isSubmitting}
                 >
-                  Submit
+                  {isSubmitting ? 'Sending...' : 'Submit'}
                 </button>
               </form>
             </div>

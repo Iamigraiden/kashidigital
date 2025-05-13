@@ -1,5 +1,8 @@
 import React from 'react';
 import { ShieldCheck, Car, CreditCard, Building, ArrowRight } from 'lucide-react';
+import img_about from '/assets/images/api-about-removebg-preview.png'
+import { Helmet } from 'react-helmet';
+
 
 const AboutUs = () => {
   const offerings = [
@@ -26,7 +29,13 @@ const AboutUs = () => {
   ];
 
   return (
+
     <div className="about-page">
+     {/* ===== meta tag ===== */}
+    <Helmet>
+    <title>About -  Identity Verification APIs Platform</title>
+    <meta name="description" content="Learn about Kashi Digital APIs, a trusted provider of fast, secure Aadhaar, PAN, GST, and RC verification APIs for businesses and developers."/>
+    </Helmet>
       {/* Hero Section */}
       <section className="py-md-5 bg-light" >
         <div className="container py-5">
@@ -42,9 +51,9 @@ const AboutUs = () => {
             </div>
             <div className="col-lg-6">
               <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                src={img_about}
                 alt="API Integration" 
-                className="img-fluid rounded-3 shadow" 
+                className="img-fluid rounded-3 " 
               />
             </div>
           </div>
