@@ -71,7 +71,7 @@ function Home() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, atque.
                 </p>
                 <div className="mt-auto">
-                  <a href="#" className="btn btn-outline-primary btn-sm">
+                  <a href="#form_area" className="btn btn-outline-primary btn-sm">
                     Learn more <i className="bi bi-arrow-right" />
                   </a>
                 </div>
@@ -86,7 +86,7 @@ function Home() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, nihil.
                 </p>
                 <div className="mt-auto">
-                  <a href="#" className="btn btn-outline-primary btn-sm">
+                  <a href="#form_area" className="btn btn-outline-primary btn-sm">
                     Learn more <i className="bi bi-arrow-right" />
                   </a>
                 </div>
@@ -101,7 +101,7 @@ function Home() {
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, earum!
                 </p>
                 <div className="mt-auto">
-                  <a href="#" className="btn btn-outline-primary btn-sm">
+                  <a href="#form_area" className="btn btn-outline-primary btn-sm">
                     Learn more <i className="bi bi-arrow-right" />
                   </a>
                 </div>
@@ -116,7 +116,7 @@ function Home() {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, in!
                 </p>
                 <div className="mt-auto">
-                  <a href="#" className="btn btn-outline-primary btn-sm">
+                  <a href="#form_area" className="btn btn-outline-primary btn-sm">
                     Learn more <i className="bi bi-arrow-right" />
                   </a>
                 </div>

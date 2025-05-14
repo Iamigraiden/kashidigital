@@ -20,7 +20,7 @@ const Popup = () => {
       email: Yup.string().email('Invalid email address').required('Required'),
       mobile: Yup.string().matches(/^[6-9]\d{9}$/, {message: "Please enter valid number.", excludeEmptyString: false}).required('Required'),
     }),
-    onSubmit: async (values, { setSubmitting, resetForm, setFieldError }) => {
+    onSubmit: async (values, { setSubmitting, resetForm}) => {
       try {
         const response = await axios.post(
           'https://core.kashidigitalapis.com/user/request-demo',
@@ -34,12 +34,14 @@ const Popup = () => {
             headers: {
               'Content-Type': 'application/json',
               'Accept': 'application/json, text/plain, */*',
+              'Origin': 'https://kashidigital.vercel.app/' 
             }
           }
         );
 
         if (response.status === 200) {
           alert('Request submitted successfully!');
+          console.log(values)
           resetForm();
         } 
         else {

@@ -1,5 +1,6 @@
 {
   "name": "kashidigital",
+  "proxy": "https://kashidigital.vercel.app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

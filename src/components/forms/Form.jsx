@@ -131,9 +131,10 @@ const Form = () => {
                         <option disabled  value="">
                           Select Time Slot
                         </option>
-                        <option>9:00 AM - 12:00 PM</option>
-                        <option>12:00 PM - 3:00 PM</option>
-                        <option>3:00 PM - 6:00 PM</option>
+                        <option>9:00 AM - 11:00 AM</option>
+                        <option>11:00 PM - 1:00 PM</option>
+                        <option>2:00 PM - 4:00 PM</option>
+                        <option>4:00 PM - 6:00 PM</option>
                       </select>
                     </div>
                     <div className="col-12 form-floating">

@@ -203,7 +203,7 @@ const Footer = () => {
                   <img
                     src="/assets/images/StartupIndia-Abi8Sn70.jpg"
                     alt="StartupIndia"
-                    className="img-fluid col-md-8 col-10 "
+                    className="img-fluid col-md-8 col-10"
                   />
                   <img
                     src="/assets/images/f1.png"
@@ -227,7 +227,7 @@ const Footer = () => {
       />
       <div className="row">
         <div className="col-md-6 order-1">
-          <p className="small text-white-50 text-md-start text-center">
+          <p className="small text-white-50 text-md-start text-center ">
             © 2025 Kashi Digital Agency Pvt. Ltd. All Rights Are Reserved.
           </p>
         </div>
