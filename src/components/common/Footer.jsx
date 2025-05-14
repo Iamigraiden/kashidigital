@@ -188,13 +188,13 @@ const Footer = () => {
               <div className="mt-4">
                 <h5 className="text-white mb-3">Certifications</h5>
                 <div className="d-flex flex-column gap-2">
-                  <a href="https://www.digitalindia.gov.in/" target='_blank' className="col-md-6">
+                  <a href="https://www.digitalindia.gov.in/" target='_blank' className="col-6">
                   <img
                     src="/assets/images/DigitalIndiaLogo-CiZR7aUc.jpg"
                     alt="digitalindia"
                     className="img-fluid"
                   /></a>
-                   <a href="https://gem.gov.in/" className="col-md-6" target='_blank'>
+                   <a href="https://gem.gov.in/" className="col-6" target='_blank'>
                   <img
                     src="/assets/images/GemGovLogo-BXjU9Rmd.png"
                     alt="gem.gov"
@@ -208,13 +208,13 @@ const Footer = () => {
                   <img
                     src="/assets/images/f1.png"
                     alt="ISO 27001"
-                    className="img-fluid col-md-12 col-10 mx-auto"
+                    className="img-fluid w-100"
                   />
-                  <a href="https://kashidigital.in/pay-now-online-kashi-digital-agency-pvt-ltd/" target='_blank' className="col-md-12 col-10 mx-auto">
+                  <a href="https://kashidigital.in/pay-now-online-kashi-digital-agency-pvt-ltd/" target='_blank' className="">
                   <img
                     src="/assets/images/payments-DxVsiWUy.png"
                     alt="ISO 27001"
-                    className="img-fluid"
+                    className="img-fluid w-100"
                   /></a>
                 </div>
               </div>

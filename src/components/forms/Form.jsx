@@ -1,6 +1,5 @@
 import React from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
-import { NavLink } from "react-router-dom";
 import axios from "axios";
 import * as Yup from "yup";
 import { useFormik } from "formik";
@@ -20,7 +19,7 @@ const Form = () => {
           businessMail: Yup.string().email('Invalid email address').required('Required'),
           phone: Yup.string().matches(/^[6-9]\d{9}$/, {message: "Please enter valid number.", excludeEmptyString: false}).required('Required'),
         }),
-        onSubmit: async (values, { setSubmitting, resetForm, setFieldError }) => {
+        onSubmit: async (values, { setSubmitting, resetForm }) => {
             // console.log(values)
           try {
             const response = await axios.post(

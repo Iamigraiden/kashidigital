@@ -20,16 +20,24 @@ const Popup = () => {
       email: Yup.string().email('Invalid email address').required('Required'),
       mobile: Yup.string().matches(/^[6-9]\d{9}$/, {message: "Please enter valid number.", excludeEmptyString: false}).required('Required'),
     }),
-    onSubmit: async (values, { setSubmitting, resetForm}) => {
+    onSubmit: async (values, { setSubmitting, resetForm }) => {
       try {
         const response = await axios.post(
-          '/api/submit-form',
-          JSON.stringify({  
+          'https://core.kashidigitalapis.com/user/request-demo',
+          {
             name: values.name,
             businessEmail: values.email,
             phone: values.mobile,
-            message: values.message
-          })
+            message: values.message || "" // Ensure message is always sent
+          },
+          {
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json, text/plain, */*',
+              'Referer': 'https://kashidigitalapis.com/',
+              'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36'
+            }
+          }
         );
 
         if (response.status === 200) {
@@ -40,8 +48,12 @@ const Popup = () => {
           alert('Failed to submit request. Please try again.');
         }
       } catch (error) {
-        console.error('Error submitting form:', error);
-        alert('An error occurred. Please try again later.');
+        console.error('Error details:', {
+          message: error.message,
+          response: error.response?.data,
+          config: error.config
+        });
+        alert(`Error: ${error.response?.data?.message || error.message}`);
       } finally {
         setSubmitting(false);
       }
@@ -50,8 +62,9 @@ const Popup = () => {
 
   return (
     <>
-      <div className='popup-trigger d-flex align-items-center justify-content-center position-fixed bottom-0 end-0 m-2 rounded-circle' data-bs-toggle="modal" 
-          data-bs-target="#demoModal" >
+      <div className='popup-trigger d-flex align-items-center justify-content-center position-fixed bottom-0 end-0 m-2 rounded-circle' 
+           data-bs-toggle="modal" 
+           data-bs-target="#demoModal">
         <MessageSquareMore 
           className='message-icon text-white' 
           size={32}
