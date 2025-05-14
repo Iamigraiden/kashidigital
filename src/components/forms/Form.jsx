@@ -30,13 +30,8 @@ const Form = () => {
               },
               {
                 headers: {
-                  'sec-ch-ua-platform': 'macOS',
-                  'Referer': 'https://kashidigitalapis.com/',
-                  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36',
                   'Accept': 'application/json, text/plain, */*',
-                  'sec-ch-ua': '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"',
                   'Content-Type': 'application/json',
-                  'sec-ch-ua-mobile': '?0'  
                 }
               }
             );
