@@ -34,6 +34,7 @@ const Popup = () => {
             headers: {
               'Content-Type': 'application/json',
               'Accept': 'application/json, text/plain, */*',
+              'Referer': 'https://kashidigitalapis.com/'
             }
           }
         );
