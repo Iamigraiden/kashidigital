@@ -24,12 +24,12 @@ const Popup = () => {
       try {
         const response = await axios.post(
           'https://core.kashidigitalapis.com/user/request-demo',
-          {
+          JSON.stringify({  
             name: values.name,
             businessEmail: values.email,
             phone: values.mobile,
-            message:values.message
-          },
+            message: values.message
+          }),
           {
             headers: {
               'Content-Type': 'application/json',
