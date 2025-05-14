@@ -18,42 +18,61 @@ const Popup = () => {
     validationSchema: Yup.object({
       name: Yup.string().min(2).max(25).required("Please enter your name"),
       email: Yup.string().email('Invalid email address').required('Required'),
-      mobile: Yup.string().matches(/^[6-9]\d{9}$/, {message: "Please enter valid number.", excludeEmptyString: false}).required('Required'),
+      mobile: Yup.string()
+        .matches(/^[6-9]\d{9}$/, {message: "Please enter valid number.", excludeEmptyString: false})
+        .required('Required'),
     }),
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       try {
+        // Prepare the request data
+        const requestData = {
+          name: values.name.trim(),
+          businessEmail: values.email.trim(), // Using businessEmail as required by API
+          phone: values.mobile.trim(),
+          message: values.message?.trim() || "" // Ensure message exists
+        };
+
+        console.log("Submitting data:", requestData); // Debug log
+
         const response = await axios.post(
           'https://core.kashidigitalapis.com/user/request-demo',
-          {
-            name: values.name,
-            businessEmail: values.email,
-            phone: values.mobile,
-            message: values.message || "" // Ensure message is always sent
-          },
+          requestData,
           {
             headers: {
               'Content-Type': 'application/json',
-              'Accept': 'application/json, text/plain, */*',
-              'Referer': 'https://kashidigitalapis.com/',
-              'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36'
-            }
+              'Accept': 'application/json, text/plain, */*'
+            },
+            timeout: 10000 // 10 second timeout
           }
         );
+
+        console.log("API Response:", response.data); // Debug log
 
         if (response.status === 200) {
           alert('Request submitted successfully!');
           resetForm();
-        } 
-        else {
-          alert('Failed to submit request. Please try again.');
+        } else {
+          throw new Error(`Unexpected status code: ${response.status}`);
         }
       } catch (error) {
-        console.error('Error details:', {
+        console.error('Submission Error:', {
           message: error.message,
           response: error.response?.data,
+          status: error.response?.status,
           config: error.config
         });
-        alert(`Error: ${error.response?.data?.message || error.message}`);
+
+        let errorMessage = 'Submission failed. Please try again later.';
+        if (error.response) {
+          // Try to get error message from response
+          errorMessage = error.response.data?.message || 
+                        error.response.data?.error ||
+                        `Server responded with ${error.response.status}`;
+        } else if (error.request) {
+          errorMessage = 'No response received from server.';
+        }
+
+        alert(errorMessage);
       } finally {
         setSubmitting(false);
       }
@@ -103,7 +122,9 @@ const Popup = () => {
                     <label htmlFor="name" className="form-label">Your Name</label>
                     <div className="underline"></div>
                   </div>
-                  {errors.name && touched.name ? (<div className="mb-0 text-danger form-text">{errors.name}</div>) : null}
+                  {errors.name && touched.name && (
+                    <div className="mb-0 text-danger form-text">{errors.name}</div>
+                  )}
                 </div>
                 
                 <div className="floating">
@@ -122,13 +143,15 @@ const Popup = () => {
                     <label htmlFor="email" className="form-label">Email Address</label>
                     <div className="underline"></div>
                   </div>
-                  {errors.email && touched.email ? (<div className="mb-0 text-danger form-text">{errors.email}</div>) : null}
+                  {errors.email && touched.email && (
+                    <div className="mb-0 text-danger form-text">{errors.email}</div>
+                  )}
                 </div>
                 
                 <div className="floating">
                   <div className="form-group">
                     <input 
-                      type="number" 
+                      type="tel" // Changed from number to tel for better mobile UX
                       id="phone" 
                       className="form-input"
                       placeholder=" "
@@ -141,7 +164,9 @@ const Popup = () => {
                     <label htmlFor="phone" className="form-label">Phone Number</label>
                     <div className="underline"></div>
                   </div>
-                  {errors.mobile && touched.mobile ? (<div className="mb-0 text-danger form-text">{errors.mobile}</div>) : null}
+                  {errors.mobile && touched.mobile && (
+                    <div className="mb-0 text-danger form-text">{errors.mobile}</div>
+                  )}
                 </div>
                 
                 <div className="floating">
@@ -164,7 +189,12 @@ const Popup = () => {
                   className="submit-btn fs-6"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Sending...' : 'Submit'}
+                  {isSubmitting ? (
+                    <>
+                      <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                      Sending...
+                    </>
+                  ) : 'Submit'}
                 </button>
               </form>
             </div>
