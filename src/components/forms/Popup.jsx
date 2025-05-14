@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MessageSquareMore } from 'lucide-react';
 import './pop.css';
 import { useFormik } from "formik";
@@ -12,8 +12,8 @@ const initialValues = {
   mobile: "",
   message: "",
 };
-
 const Popup = () => {
+  const [showmsg, setShowmsg]= useState(false)
   const {values, errors, handleBlur, touched, handleChange, handleSubmit, isSubmitting} = useFormik({
     initialValues: initialValues,
     validationSchema: Yup.object({
@@ -40,8 +40,10 @@ const Popup = () => {
         );
 
         if (response.status === 200) {
-          alert('Request submitted successfully!');
-          console.log(values)
+          setShowmsg(true)
+          setTimeout(()=>{
+          setShowmsg(false)
+          },5000)
           resetForm();
         } 
         else {
@@ -168,6 +170,11 @@ const Popup = () => {
                       Sending...
                     </> : 'Submit'}
                 </button>
+                {showmsg && (
+                  <div className="text-success small">
+                    Request submitted successfully!
+                  </div>
+                )}
               </form>
             </div>
           </div>
