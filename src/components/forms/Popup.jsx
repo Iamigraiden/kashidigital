@@ -29,14 +29,7 @@ const Popup = () => {
             businessEmail: values.email,
             phone: values.mobile,
             message: values.message
-          }),
-          {
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json, text/plain, */*',
-              'Referer': 'https://kashidigitalapis.com/'
-            }
-          }
+          })
         );
 
         if (response.status === 200) {
