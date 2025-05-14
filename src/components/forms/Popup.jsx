@@ -48,18 +48,6 @@ const Popup = () => {
         }
       } catch (error) {
         console.error('Error submitting form:', error);
-        if (error.response) {
-          // The request was made and the server responded with a status code
-          console.error('Response data:', error.response.data);
-          console.error('Response status:', error.response.status);
-          console.error('Response headers:', error.response.headers);
-        } else if (error.request) {
-          // The request was made but no response was received
-          console.error('Request:', error.request);
-        } else {
-          // Something happened in setting up the request
-          console.error('Error message:', error.message);
-        }
         alert('An error occurred. Please try again later.');
       } finally {
         setSubmitting(false);
