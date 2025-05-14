@@ -23,7 +23,7 @@ const Popup = () => {
     onSubmit: async (values, { setSubmitting, resetForm}) => {
       try {
         const response = await axios.post(
-          'https://core.kashidigitalapis.com/user/request-demo',
+          '/api/submit-form',
           JSON.stringify({  
             name: values.name,
             businessEmail: values.email,
